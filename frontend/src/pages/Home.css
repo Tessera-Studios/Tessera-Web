@@ -1,0 +1,16 @@
+#home-landing {
+  background-image: url('../assets/home-landing.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#build-button {
+  background: 
+    linear-gradient(to right, var(--dark-purple), var(--accent)) padding-box,
+    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 5px 25px;
+  font-weight:500;
+  box-shadow: inset 0px 3px 8px #968be840;
+}
