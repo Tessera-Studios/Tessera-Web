@@ -1,5 +1,5 @@
 #home-landing {
-  background-image: url('../assets/home-landing.png');
+  background-image: url("../assets/home-landing.png");
   background-size: cover;
   background-position: center;
 }
@@ -11,6 +11,13 @@
   border: 2px solid transparent;
   border-radius: 3rem;
   padding: 5px 25px;
-  font-weight:500;
-  box-shadow: inset 0px 3px 8px #968be840;
+  font-weight: 500;
+  box-shadow: inset 0px 3px 8px rgba(150, 139, 232, 0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#build-button:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
 }
