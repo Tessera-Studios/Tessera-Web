@@ -28,5 +28,6 @@ Tessera will aim to provide a minimalist yet impactful experience for visitors. 
 - ReactJS for the User Interface.
 - NextJS as a framework to assist with building out the UI.
 - Contentful for the Content Management System, to simplify updating content.
-- Python runtime with the FastAPI library to serve as the server.
+- Nginx runtime to serve static pages.
+- Static Site Generation (SSG) for ensuring all content is available at build time.
 - Google Cloud Run as the hosting provider.
