@@ -1,0 +1,9 @@
+.nav-link:hover {
+  color: var(--secondary);
+  transition: 0.25s ease-in-out;
+}
+
+.active {
+  color: var(--secondary);
+  font-weight: 500;
+}
