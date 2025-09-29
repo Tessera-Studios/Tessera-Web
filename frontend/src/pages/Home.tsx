@@ -53,28 +53,32 @@ function Home() {
 
                 <div id="tessera-tiles" className="flex gap-2 p-8">
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <img src={tesseraTileImage} width={50} height={50} />
                         <p>Creativity</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <img src={tesseraTileImage} width={50} height={50} />
                         <p>Precision</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <img src={tesseraTileImage} width={50} height={50} />
                         <p>Collaboration</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <img src={tesseraTileImage} width={50} height={50} />
                         <p>Innovation</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <img src={tesseraTileImage} width={50} height={50} />
                         <p>User Focus</p>
                     </div>
 
                 </div>
                 <p className="text-center max-w-[40vw]">We don’t do one-size-fits-all. Every project is a custom composition, carefully built to align with your unique vision.</p>
+            </div>
+
+            <div id="home-vision" className="flex justify-center items-center min-h-[30vh] bg-[var(--deep-purple)] border-t-4 border-b-4 border-[var(--accent)]">
+                <p className="text-3xl">Every Vision Matters. <span className="text-[var(--secondary)]">Especially Yours.</span></p>
             </div>
         </>
     );
