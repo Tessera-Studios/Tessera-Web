@@ -35,18 +35,6 @@
   100% { transform: scale(1); }
 }
 
-.mouse-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, #6a48d00d 0%, transparent 60%);
-  border-radius: 50%;
-  pointer-events: none;
-  transition: transform 0.18s ease;
-}
-
 #build-button {
   background: linear-gradient(to right, var(--dark-purple), var(--accent))
       padding-box,
