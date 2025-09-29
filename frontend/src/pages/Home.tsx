@@ -2,7 +2,8 @@ import { useRef } from "react";
 import "./Home.css"
 import ContactCTA from "../components/ContactCTA";
 import ourApproachImage from "../assets/our-approach.png"
-import tesseraTileImage from "../assets/tessera-emblem.png"
+import tesseraTileImage from "../assets/tessera-emblem-light-purple-transparent.png"
+import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.png"
 
 function Home() {
     const shadowRef = useRef<HTMLDivElement>(null);
@@ -57,7 +58,7 @@ function Home() {
                         <p>Creativity</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50} />
+                        <img src={tesseraWhiteTileImage} width={50} height={50} />
                         <p>Precision</p>
                     </div>
                     <div className="tessera-tile">
@@ -65,7 +66,7 @@ function Home() {
                         <p>Collaboration</p>
                     </div>
                     <div className="tessera-tile">
-                        <img src={tesseraTileImage} width={50} height={50} />
+                        <img src={tesseraWhiteTileImage} width={50} height={50} />
                         <p>Innovation</p>
                     </div>
                     <div className="tessera-tile">
@@ -77,7 +78,7 @@ function Home() {
                 <p className="text-center max-w-[40vw]">We don’t do one-size-fits-all. Every project is a custom composition, carefully built to align with your unique vision.</p>
             </div>
 
-            <div id="home-vision" className="flex justify-center items-center min-h-[30vh] bg-[var(--deep-purple)] border-t-4 border-b-4 border-[var(--accent)]">
+            <div id="home-vision" className="flex justify-center items-center min-h-[30vh] bg-[var(--deep-purple)] border-t-3 border-b-3 border-[var(--accent)]">
                 <p className="text-3xl">Every Vision Matters. <span className="text-[var(--secondary)]">Especially Yours.</span></p>
             </div>
 

@@ -101,6 +101,7 @@
   justify-items: center;
   align-items: center;
   text-align: center;
+  gap: 4px;
   width: 150px;
   padding: 15px 30px;
   border-radius: 0.5rem;
