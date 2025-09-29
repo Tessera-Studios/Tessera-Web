@@ -22,10 +22,12 @@ function Home() {
         <>
             <div id="home-landing" className="flex flex-col justify-center items-center min-h-[100vh]"
                 onMouseMove={handleMouseMove}>
-                <h1 className="text-2xl lg:text-3xl xl:text-4xl p-4 font-semibold">Building Your Vision, One Piece at a Time</h1>
-                <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)]">Software Design & Development Services</p>
-                <button id="build-button" className="mt-6">Let's Build!</button>
-                <div ref={shadowRef} className="mouse-shadow"></div>
+                <div>
+                    <h1 className="text-2xl lg:text-3xl xl:text-4xl p-4 font-semibold">Building Your Vision, One Piece at a Time</h1>
+                    <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)]">Software Design & Development Services</p>
+                    <button id="build-button" className="mt-6">Let's Build!</button>
+                    <div ref={shadowRef} className="mouse-shadow"></div>
+                </div>
             </div>
 
             <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[40vh] bg-white text-black p-20">
@@ -82,7 +84,7 @@ function Home() {
                 <p className="text-3xl">Every Vision Matters. <span className="text-[var(--secondary)]">Especially Yours.</span></p>
             </div>
 
-            <ContactCTA/>
+            <ContactCTA />
         </>
     );
 }
