@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import "./Home.css"
 import ourApproachImage from "../assets/our-approach.png"
+import tesseraTileImage from "../assets/tessera-emblem.png"
+import whyChooseUsImage from "../assets/why-choose-tessera.png"
 
 function Home() {
     const shadowRef = useRef<HTMLDivElement>(null);
@@ -17,7 +19,7 @@ function Home() {
 
     return (
         <>
-            <div id="home-landing" className="flex flex-col justify-center items-center h-[100vh]"
+            <div id="home-landing" className="flex flex-col justify-center items-center min-h-[100vh]"
                 onMouseMove={handleMouseMove}>
                 <h1 className="text-2xl lg:text-3xl xl:text-4xl p-4 font-semibold">Building Your Vision, One Piece at a Time</h1>
                 <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)]">Software Design & Development Services</p>
@@ -25,13 +27,13 @@ function Home() {
                 <div ref={shadowRef} className="mouse-shadow"></div>
             </div>
 
-            <div id="home-what-we-do" className="flex flex-col justify-center items-center h-[40vh] bg-white text-black p-20">
+            <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[40vh] bg-white text-black p-20">
                 <h2 className="text-2xl lg:text-3xl font-bold text-[var(--accent)] mb-2">What We Do</h2>
                 <p className="text-center md:max-w-[35vw] py-2 leading-7">At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.</p>
                 <button id="learn-more-button" className="mt-6">Learn More</button>
             </div>
 
-            <div id="home-our-approach" className="flex justify-center items-center h-[75vh] p-20">
+            <div id="home-our-approach" className="flex justify-center items-center min-h-[75vh] p-20">
                 <div className="image-container mr-5">
                     <img className="our-approach-image" src={ourApproachImage} width={300} height={300} />
                     <div className="inner-shadow"></div>
@@ -44,6 +46,35 @@ function Home() {
                         <p>From design to development, we keep the user at the center.</p>
                     </div>
                 </div>
+            </div>
+
+            <div id="home-why-choose-tessera" className="flex flex-col justify-center items-center min-h-[60vh]">
+                <h2 className="md:text-3xl text-center font-semibold">Why Choose Tessera?</h2>
+
+                <div id="tessera-tiles" className="flex gap-2 p-8">
+                    <div className="tessera-tile">
+                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <p>Creativity</p>
+                    </div>
+                    <div className="tessera-tile">
+                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <p>Precision</p>
+                    </div>
+                    <div className="tessera-tile">
+                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <p>Collaboration</p>
+                    </div>
+                    <div className="tessera-tile">
+                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <p>Innovation</p>
+                    </div>
+                    <div className="tessera-tile">
+                        <img src={tesseraTileImage} width={50} height={50}/>
+                        <p>User Focus</p>
+                    </div>
+
+                </div>
+                <p className="text-center max-w-[40vw]">We don’t do one-size-fits-all. Every project is a custom composition, carefully built to align with your unique vision.</p>
             </div>
         </>
     );

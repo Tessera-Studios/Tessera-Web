@@ -85,6 +85,25 @@
   border-radius: 1rem;
   inset: 0;
   border-radius: inherit;
-  box-shadow: inset 0px 0px 15px rgba(227, 209, 253, 0.558);
+  box-shadow: inset 0px 4px 18px rgba(227, 209, 253, 0.558);
   pointer-events: none; 
+}
+
+/* Why Choose Tessera */
+#home-why-choose-tessera {
+  background: linear-gradient(to bottom, var(--black), var(--background));
+  
+}
+
+.tessera-tile {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  padding: 15px 30px;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, var(--accent), var(--dark-purple));
+  box-shadow: inset 0px 3px 5px var(--secondary);
 }
