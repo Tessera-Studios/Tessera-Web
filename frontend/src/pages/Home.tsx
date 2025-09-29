@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import "./Home.css"
+import ContactCTA from "../components/ContactCTA";
 import ourApproachImage from "../assets/our-approach.png"
 import tesseraTileImage from "../assets/tessera-emblem.png"
-import whyChooseUsImage from "../assets/why-choose-tessera.png"
 
 function Home() {
     const shadowRef = useRef<HTMLDivElement>(null);
@@ -80,6 +80,8 @@ function Home() {
             <div id="home-vision" className="flex justify-center items-center min-h-[30vh] bg-[var(--deep-purple)] border-t-4 border-b-4 border-[var(--accent)]">
                 <p className="text-3xl">Every Vision Matters. <span className="text-[var(--secondary)]">Especially Yours.</span></p>
             </div>
+
+            <ContactCTA/>
         </>
     );
 }

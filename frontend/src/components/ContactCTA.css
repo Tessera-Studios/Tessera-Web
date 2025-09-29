@@ -1,0 +1,23 @@
+#contact-cta {
+    background-image:  url("../assets/contact-cta.png");
+    background-size: cover;
+    
+}
+
+#contact-button {
+  background: linear-gradient(to right, var(--accent), var(--primary))
+      padding-box,
+    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 5px 25px;
+  font-weight: 500;
+  box-shadow: inset 0px 3px 8px rgba(150, 139, 232, 0.545);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#contact-button:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
