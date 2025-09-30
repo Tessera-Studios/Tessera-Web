@@ -28,5 +28,30 @@ Tessera will aim to provide a minimalist yet impactful experience for visitors. 
 - ReactJS for the User Interface.
 - NextJS as a framework to assist with building out the UI.
 - Contentful for the Content Management System, to simplify updating content.
-- Python runtime with the FastAPI library to serve as the server.
+- Nginx runtime to serve static pages.
+- Static Site Generation (SSG) for ensuring all content is available at build time.
 - Google Cloud Run as the hosting provider.
+
+## Building
+
+This full project can be built locally using docker as follows:
+
+```sh
+
+cd frontend
+docker build -t tesseraweb .
+docker run --rm -p 80:8080 tesseraweb # This will temporarily run the server
+```
+
+You will then be able to view the project at `http://localhost.com`
+
+For development, the nginx server does not need to be run, and the project can be built as follows:
+
+```sh
+
+cd frontend
+npm install
+npm run dev # This will launch the Vite dev server
+```
+
+
