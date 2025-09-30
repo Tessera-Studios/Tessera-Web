@@ -3,6 +3,7 @@ import ContactCTA from "../components/ContactCTA";
 import ourApproachImage from "../assets/our-approach.png"
 import tesseraTileImage from "../assets/tessera-emblem-light-purple-transparent.png"
 import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.png"
+import Silk from "../components/Silk.tsx";
 
 function Home() {
     return (
@@ -36,30 +37,44 @@ function Home() {
                 </div>
             </div>
 
-            <div id="home-why-choose-tessera" className="flex flex-col justify-center items-center min-h-[60vh] p-10">
+
+            <div
+                id="home-why-choose-tessera"
+                className="relative flex flex-col justify-center items-center min-h-[60vh] p-10 overflow-hidden"
+            >
+                <div className="absolute inset-0 -z-10">
+                    <Silk
+                        speed={5}
+                        scale={1}
+                        color="#121212ff"
+                        noiseIntensity={0.6}
+                        rotation={90}
+                    />
+                </div>
+
                 <h2 className="text-2xl md:text-3xl text-center font-semibold">Why Choose Tessera?</h2>
 
                 <div id="tessera-tiles" className="md:flex gap-2 p-8">
                     <div className="flex gap-2 justify-center">
-                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw]">
+                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw] lg:min-w-[10vw]">
                             <img src={tesseraTileImage} width={50} height={50} />
                             <p className="text-sm md:text-base">Creativity</p>
                         </div>
-                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw]">
+                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw] lg:min-w-[10vw]">
                             <img src={tesseraWhiteTileImage} width={50} height={50} />
                             <p className="text-sm md:text-base">Precision</p>
                         </div>
-                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw]">
+                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw] lg:min-w-[10vw]">
                             <img src={tesseraTileImage} width={50} height={50} />
                             <p className="text-sm md:text-base">Collaboration</p>
                         </div>
                     </div>
                     <div className="flex gap-2 mt-2 md:mt-0 justify-center">
-                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw]">
+                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw] lg:min-w-[10vw]">
                             <img src={tesseraWhiteTileImage} width={50} height={50} />
                             <p className="text-sm md:text-base">Innovation</p>
                         </div>
-                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw]">
+                        <div className="tessera-tile min-w-[25vw] md:min-w-[15vw] lg:min-w-[10vw]">
                             <img src={tesseraTileImage} width={50} height={50} />
                             <p className="text-sm md:text-base">User Focus</p>
                         </div>
