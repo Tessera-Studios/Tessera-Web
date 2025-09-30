@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home.tsx"
 import Navbar from "./components/Navbar.tsx"
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Footer from './components/Footer.tsx';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
