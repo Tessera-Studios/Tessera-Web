@@ -1,21 +1,38 @@
+/* Landing */
 #home-landing {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;        
+  text-align: center;      
+}
+
+#home-landing > * {
+  position: relative;
+  z-index: 2;
+}
+
+#home-landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../assets/home-landing.png");
   background-size: cover;
   background-position: center;
-  position: relative;
-  overflow: hidden;
+  z-index: 1;
+  transform: scale(1);
+  animation: breathe 8s ease-in-out infinite;
 }
 
-.mouse-shadow {
-position: absolute;
-  top: 0;
-  left: 0;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, #6a48d008 0%, transparent 60%);
-  border-radius: 50%;
-  pointer-events: none;
-  transition: transform 0.18s ease;
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.0255);} 
+  100% { transform: scale(1); }
 }
 
 #build-button {
@@ -34,4 +51,70 @@ position: absolute;
 #build-button:hover {
   transform: scale(1.04);
   box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+/* What We Do */
+#learn-more-button {
+  background: linear-gradient(to right, var(--accent), var(--primary))
+      padding-box,
+    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 5px 25px;
+  font-weight: 500;
+  color: white;
+  box-shadow: inset 0px 2px 8px rgba(150, 139, 232, 0.756);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#learn-more-button:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+/* Our Approach */
+#home-our-approach {
+  background: linear-gradient(
+    to bottom,
+    var(--deep-purple),
+    var(--dark-purple)
+  );
+
+}
+
+.our-approach-image {
+  border-radius: 1rem;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 1rem;
+
+  background: url("../assets/our-approach.png");
+  background-size: contain;
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+.inner-shadow {
+  position: absolute;
+  border-radius: 1rem;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0px 4px 18px rgba(227, 209, 253, 0.558);
+  pointer-events: none; 
+}
+
+/* Why Choose Tessera */
+.tessera-tile {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 15px 10px;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, var(--accent), var(--dark-purple));
+  box-shadow: inset 0px 3px 5px var(--secondary);
 }
