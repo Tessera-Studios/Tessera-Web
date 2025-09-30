@@ -6,6 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from './components/Footer.tsx';
+import About from './pages/About.tsx';
+import Services from './pages/Services.tsx';
+import Contact from './pages/Contact.tsx';
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />
