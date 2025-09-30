@@ -18,7 +18,7 @@ function Navbar() {
 
                 <div
                     id="links"
-                    className="flex md:gap-12 md:px-5 mr-2 hidden lg:block"
+                    className="md:gap-12 md:px-5 mr-2 hidden lg:flex"
                 >
                     <NavLink
                         to="/"
