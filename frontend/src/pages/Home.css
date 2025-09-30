@@ -118,8 +118,7 @@
   align-items: center;
   text-align: center;
   gap: 4px;
-  width: 150px;
-  padding: 15px 30px;
+  padding: 15px 10px;
   border-radius: 0.5rem;
   background: linear-gradient(to right, var(--accent), var(--dark-purple));
   box-shadow: inset 0px 3px 5px var(--secondary);
