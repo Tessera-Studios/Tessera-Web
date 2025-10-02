@@ -3,6 +3,7 @@ import landingImage from "../assets/about-landing.png"
 import ourApproachImage from "../assets/our-approach.png";
 import missionVisionBg from "../assets/vision-mision.mp4"
 import ContactCTA from '../components/ContactCTA';
+import "./About.css";
 
 function About() {
     return (
@@ -16,7 +17,7 @@ function About() {
                 </div>
             </div>
 
-            <div id="about-who-we-are" className="flex justify-center items-center min-h-[75vh] p-5 md:p-20 bg-[linear-gradient(to_bottom,var(--deep-purple),var(--dark-purple))] text-white">
+            <div id="about-who-we-are" className="flex justify-center items-center min-h-[75vh] p-5 md:p-20 text-white">
                 <div className="w-[36vw] md:p-2">
                     <h2 className='text-5xl mb-5 font-semibold'>Who We Are</h2>
                     <p className='leading-8'>We’re a creative team driven by a shared passion for building meaningful digital experiences.
@@ -44,16 +45,43 @@ function About() {
 
                 <div className="vision-mission-tile p-20 rounded-lg text-white max-w-4xl z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] mr-10 text-center w-[30vw]">
                     <h2 className='text-4xl mb-5 font-semibold'>Our Vision</h2>
-                    <p>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>
+                    <p className='text-start'>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>
                 </div>
                 <div className="vision-mission-tile p-20 rounded-lg text-white max-w-4xl z-10 bg-[linear-gradient(to_right,var(--dark-purple),var(--accent))] ml-10 text-center w-[30vw]">
                     <h2 className='text-4xl mb-5 font-semibold'>Our Mission</h2>
-                    <p>To craft innovative, scalable digital solutions that are as thoughtful as they are powerful—connecting clients with their users through precision, creativity, and care.</p>
+                    <p className='text-start'>To craft innovative, scalable digital solutions that are as thoughtful as they are powerful—connecting clients with their users through precision, creativity, and care.</p>
                 </div>
             </div>
 
             <div id="about-what-sets-us-apart" className="flex flex-col justify-center items-center min-h-[50vh] p-10">
                 <h2 className="text-3xl md:text-4xl font-semibold mb-2">What Sets Us Apart</h2>
+
+                <div id="sets-us-apart-tiles">
+                    <div className="flex">
+                        <div className="sets-us-apart-tile">
+                            <h3 className="text-xl font-semibold mb-2">Modularity</h3>
+                            <p className="leading-7">Every project is built to scale—flexible, adaptable, and future-ready.</p>
+                        </div>
+                        <div className="sets-us-apart-tile">
+                            <h3 className="text-xl font-semibold mb-2">User-Centered Thinking</h3>
+                            <p className="leading-7">Real people are at the core of every decision we make.</p>
+                        </div>
+                        <div className="sets-us-apart-tile">
+                            <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
+                            <p className="leading-7">We’re not just vendors—we’re part of your team.</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <div className="sets-us-apart-tile">
+                            <h3 className="text-xl font-semibold mb-2">Creative & Technical Balance</h3>
+                            <p className="leading-7">We merge design thinking with robust engineering.</p>
+                        </div>
+                        <div className="sets-us-apart-tile">
+                            <h3 className="text-xl font-semibold mb-2">Detail-Driven Craftsmanship</h3>
+                            <p className="leading-7">No corner is cut—every piece matters.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <ContactCTA />
