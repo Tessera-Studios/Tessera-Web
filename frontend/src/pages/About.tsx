@@ -53,14 +53,14 @@ function About() {
                 </div>
             </div>
 
-            <div id="about-what-sets-us-apart" className="flex flex-col justify-center items-center min-h-[50vh] p-10">
-                <h2 className="text-3xl md:text-4xl font-semibold mb-2">What Sets Us Apart</h2>
+            <div id="about-what-sets-us-apart" className="flex flex-col justify-center items-center min-h-[60vh] p-10 pt-20 mt-20">
+                <h2 className="text-3xl md:text-4xl font-semibold mb-10">What Sets Us Apart</h2>
 
                 <div id="sets-us-apart-tiles">
-                    <div className="flex">
+                    <div className="flex w-full gap-5">
                         <div className="sets-us-apart-tile">
                             <h3 className="text-xl font-semibold mb-2">Modularity</h3>
-                            <p className="leading-7">Every project is built to scale—flexible, adaptable, and future-ready.</p>
+                            <p className="leading-7">Every project is built to scale: flexible, adaptable, and future-ready.</p>
                         </div>
                         <div className="sets-us-apart-tile">
                             <h3 className="text-xl font-semibold mb-2">User-Centered Thinking</h3>
@@ -68,17 +68,17 @@ function About() {
                         </div>
                         <div className="sets-us-apart-tile">
                             <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
-                            <p className="leading-7">We’re not just vendors—we’re part of your team.</p>
+                            <p className="leading-7">We’re not just vendors, we’re part of your team.</p>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex w-full gap-5 mt-5 justify-center">
                         <div className="sets-us-apart-tile">
                             <h3 className="text-xl font-semibold mb-2">Creative & Technical Balance</h3>
                             <p className="leading-7">We merge design thinking with robust engineering.</p>
                         </div>
                         <div className="sets-us-apart-tile">
                             <h3 className="text-xl font-semibold mb-2">Detail-Driven Craftsmanship</h3>
-                            <p className="leading-7">No corner is cut—every piece matters.</p>
+                            <p className="leading-7">No corner is cut, every piece matters.</p>
                         </div>
                     </div>
                 </div>
