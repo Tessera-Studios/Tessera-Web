@@ -16,7 +16,7 @@ function About() {
                 </div>
             </div>
 
-            <div id="about-who-we-are" className="flex justify-center items-center min-h-[75vh] p-5 md:p-20">
+            <div id="about-who-we-are" className="flex justify-center items-center min-h-[75vh] p-5 md:p-20 bg-[linear-gradient(to_bottom,var(--deep-purple),var(--dark-purple))] text-white">
                 <div className="w-[36vw] md:p-2">
                     <h2 className='text-5xl mb-5 font-semibold'>Who We Are</h2>
                     <p className='leading-8'>We’re a creative team driven by a shared passion for building meaningful digital experiences.

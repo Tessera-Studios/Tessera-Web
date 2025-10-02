@@ -12,10 +12,6 @@
   box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
 }
 
-#about-who-we-are { 
-    background: linear-gradient(to bottom, var(--deep-purple), var(--dark-purple));
-}
-
 .vision-mission-tile {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
