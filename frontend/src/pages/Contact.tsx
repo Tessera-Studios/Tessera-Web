@@ -1,7 +1,9 @@
 function Contact() {
     return (
         <>
-            <div id="contact-landing" className="min-h-[100vh]"></div>
+            <div id="contact-landing" className="min-h-[100vh]">
+                
+            </div>
         </>
     );
 }
