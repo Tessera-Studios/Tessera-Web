@@ -26,7 +26,6 @@
 
 .sets-us-apart-tile {
   background: linear-gradient(to bottom, var(--dark-purple), var(--accent));
-  width: 20rem;
   padding: 2.5rem;
   border-radius: 1rem;
   text-align: center;
