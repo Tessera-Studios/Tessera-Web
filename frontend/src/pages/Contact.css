@@ -1,0 +1,49 @@
+#contact-landing {
+  background: linear-gradient(to bottom, var(--background), #24116f00),
+    url("../assets/tessera-mosaic.png"),
+    linear-gradient(to bottom, var(--background), #24116f00);
+  background-size: cover;
+}
+
+#contact-form {
+  background: linear-gradient(to right, var(--dark-purple), var(--accent));
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+
+  background: linear-gradient(to right, var(--dark-purple), var(--accent))
+      padding-box,
+    linear-gradient(to left, var(--secondary), var(--primary)) border-box;
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: inset 0px 2px 8px rgba(150, 139, 232, 0.756);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--secondary);
+}
+
+#contact-submit-button {
+  background: linear-gradient(to right, var(--accent), var(--primary))
+      padding-box,
+    linear-gradient(to right, var(--deep-purple), var(--dark-purple)) border-box;
+  border-radius: 3rem;
+  padding: 8px 30px;
+  font-weight: 500;
+  color: white;
+  box-shadow: inset 0px 2px 8px rgba(150, 139, 232, 0.756);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#contact-submit-button:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
