@@ -1,6 +1,6 @@
-#about-landing { 
-    background: url("../assets/about-landing.png");
-    background-size: cover;
+#about-landing {
+  background: url("../assets/about-landing.png");
+  background-size: cover;
 }
 
 .image-container {
@@ -12,10 +12,25 @@
   box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
 }
 
-#about-who-we-are { 
-    background: linear-gradient(to bottom, var(--deep-purple), var(--dark-purple));
+#about-who-we-are {
+  background: linear-gradient(
+    to bottom,
+    var(--deep-purple),
+    var(--dark-purple)
+  );
 }
 
 .vision-mission-tile {
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sets-us-apart-tile {
+  background: linear-gradient(to bottom, var(--dark-purple), var(--accent));
+  padding: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  p {
+    text-align: start;
+  }
 }
