@@ -1,0 +1,44 @@
+#services-landing {
+  background: url("../assets/services-landing.png");
+  background-size: cover;
+}
+
+#services-learn-more-button {
+  background: linear-gradient(to right, var(--accent), var(--primary))
+      padding-box,
+    linear-gradient(to right, var(--deep-purple), var(--dark-purple)) border-box;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  padding: 5px 25px;
+  font-weight: 500;
+  color: white;
+  box-shadow: inset 0px 2px 8px rgba(150, 139, 232, 0.756);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#services-learn-more-button:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+.services-image {
+  border-radius: 1rem;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 1rem;
+
+  background-size: contain;
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+.inner-shadow {
+  position: absolute;
+  border-radius: 1rem;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0px 4px 18px rgba(227, 209, 253, 0.558);
+  pointer-events: none; 
+}

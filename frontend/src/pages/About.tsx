@@ -1,4 +1,4 @@
-import emblem from '../../public/tessera-emblem.png';
+import emblem from '/tessera-emblem.png';
 import landingImage from "../assets/about-landing.png"
 import ourApproachImage from "../assets/our-approach.png";
 import missionVisionBg from "../assets/vision-mision.mp4"
