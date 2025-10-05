@@ -1,7 +1,7 @@
 #contact-landing {
-  background: linear-gradient(to bottom, var(--background), #24116f00),
+  /* background: linear-gradient(to bottom, var(--background), #24116f00),
     url("../assets/tessera-mosaic.png"),
-    linear-gradient(to bottom, var(--background), #24116f00);
+    linear-gradient(to bottom, var(--background), #24116f00); */
   background-size: cover;
 }
 
@@ -23,7 +23,7 @@
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
