@@ -23,11 +23,11 @@ function Footer() {
                 <p className="text-3xl">Connect With Us</p>
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fa-solid fa-envelope text-[var(--secondary)]"></i>
-                    <p>info@tessera-studios.com</p>
+                    <a href="mailto:info@tessera-studios.com">info@tessera-studios.com</a>
                 </div>
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fab fa-linkedin text-[var(--secondary)]"></i>
-                    <p>Tessera Studios</p>
+                    <a href="https://www.linkedin.com/company/tesserastudios" target="_blank" rel="noopener noreferrer">Tessera Studios</a>
                 </div>
             </div>
         </div>
