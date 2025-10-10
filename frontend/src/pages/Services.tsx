@@ -10,7 +10,10 @@ function Services() {
             <div id="services-landing" className="flex flex-col justify-center items-center md:text-center min-h-[100vh] p-10 md:p-20">
                 <p className="text-4xl md:text-5xl text-center font-semibold mb-4">Our Services</p>
                 <p className="text-lg md:max-w-1/2 mb-5">Our services turn complex ideas into intuitive, modular solutions—creating digital experiences that drive engagement, growth, and long-term value.</p>
-                <button id="services-learn-more-button">Learn More</button>
+                <button id="services-learn-more-button" onClick={() => {
+                    const section = document.getElementById("services-software-development");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                }}>Learn More</button>
             </div>
 
             <div id="services-software-development" className="flex flex-col lg:flex-row justify-center items-center md:min-h-[50vh] p-15 md:p-30 lg:px-40">
