@@ -4,6 +4,7 @@ import ourApproachImage from "../assets/our-approach.png"
 import tesseraTileImage from "../assets/tessera-emblem-light-purple-transparent.png"
 import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.png"
 import Silk from "../components/Silk.tsx";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -12,14 +13,14 @@ function Home() {
                 <div>
                     <h1 className="text-2xl sm:text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, One Piece at a Time</h1>
                     <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)]">Software Design & Development Services</p>
-                    <button id="build-button" className="mt-6">Let's Build!</button>
+                    <button id="build-button" className="mt-6"><Link to="/contact">Let's Build!</Link></button>
                 </div>
             </div>
 
             <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[35vh] bg-white text-black p-15">
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-2">What We Do</h2>
                 <p className="text-center md:max-w-[75vw] lg:max-w-[35vw] py-2 leading-7">At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.</p>
-                <button id="learn-more-button" className="mt-6">Learn More</button>
+                <button id="learn-more-button" className="mt-6"><Link to="/services">Learn More</Link></button>
             </div>
 
             <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-20">
