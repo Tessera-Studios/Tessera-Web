@@ -13,7 +13,14 @@ function Navbar() {
                 className="flex justify-between p-5 px-8 absolute w-full left-0 z-50"
             >
                 <div id="branding">
-                    <img id="logo" src={logo} width={200} alt="Logo" />
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `${isActive ? "active " : ""}nav-link`
+                        }
+                    >
+                        <img id="logo" src={logo} width={200} alt="Logo" />
+                    </NavLink>
                 </div>
 
                 <div
