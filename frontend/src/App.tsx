@@ -9,6 +9,7 @@ import Footer from './components/Footer.tsx';
 import About from './pages/About.tsx';
 import Services from './pages/Services.tsx';
 import Contact from './pages/Contact.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
