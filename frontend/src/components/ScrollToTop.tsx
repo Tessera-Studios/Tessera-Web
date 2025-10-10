@@ -5,7 +5,7 @@ function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0); // Scrolls to top instantly
+        window.scrollTo({ top: 0, behavior: "auto" });
     }, [pathname]);
     return (<></>);
 }

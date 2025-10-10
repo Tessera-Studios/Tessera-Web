@@ -45,6 +45,8 @@ function About() {
                     <source src={missionVisionBg} type="video/mp4" />
                 </video>
 
+                <div className="absolute inset-0 bg-[var(--dark-purple)] opacity-65 z-5"></div>
+
                 <div className="flex flex-col md:flex-row justify-center items-center gap-5">
                     <div className="vision-mission-tile p-10 md:p-20 rounded-lg text-white max-w-4xl z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] md:mr-10 text-center min-w-[30vw]">
                         <h2 className='text-4xl mb-5 font-semibold'>Our Vision</h2>
