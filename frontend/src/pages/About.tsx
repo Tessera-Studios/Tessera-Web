@@ -47,20 +47,20 @@ function About() {
 
                 <div className="absolute inset-0 bg-[var(--dark-purple)] opacity-65 z-5"></div>
 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-5">
-                    <div className="vision-mission-tile p-10 md:p-20 rounded-lg text-white max-w-4xl z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] md:mr-10 text-center min-w-[30vw]">
+                <div className="flex flex-col md:flex-row justify-center items-center md:p-20">
+                    <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] md:mr-10 text-center min-w-[20vw]">
                         <h2 className='text-4xl mb-5 font-semibold'>Our Vision</h2>
-                        <p className='text-start'>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>
+                        <p className='text-start leading-8'>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>
                     </div>
-                    <div className="vision-mission-tile p-10 md:p-20 rounded-lg text-white max-w-4xl z-10 bg-[linear-gradient(to_right,var(--dark-purple),var(--accent))] md:ml-10 text-center min-w-[30vw]">
+                    <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_right,var(--dark-purple),var(--accent))] md:ml-10 text-center min-w-[20vw]">
                         <h2 className='text-4xl mb-5 font-semibold'>Our Mission</h2>
-                        <p className='text-start'>To craft innovative, scalable digital solutions that are as thoughtful as they are powerful—connecting clients with their users through precision, creativity, and care.</p>
+                        <p className='text-start leading-8'>To craft innovative, scalable digital solutions that are as thoughtful as they are powerful—connecting clients with their users through precision, creativity, and care.</p>
                     </div>
                 </div>
             </div>
 
-            <div id="about-what-sets-us-apart" className="flex flex-col justify-center items-center min-h-[60vh] p-10 pt-20 mt-20">
-                <h2 className="text-3xl md:text-4xl font-semibold mb-5 md:mb-10">What Sets Us Apart</h2>
+            <div id="about-what-sets-us-apart" className="flex flex-col justify-center items-center min-h-[70vh] p-10 py-20">
+                <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-8">What Sets Us Apart</h2>
 
                 <div id="sets-us-apart-tiles" className='md:px-20'>
                     <div className="flex flex-col md:flex-row w-full gap-5">
