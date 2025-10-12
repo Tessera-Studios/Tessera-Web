@@ -19,7 +19,7 @@ function Navbar() {
                             `${isActive ? "active " : ""}nav-link`
                         }
                     >
-                        <img id="logo" src={logo} width={200} alt="Logo" />
+                        <img id="logo" src={logo} width={200} alt="Tessera Studios Logo" />
                     </NavLink>
                 </div>
 

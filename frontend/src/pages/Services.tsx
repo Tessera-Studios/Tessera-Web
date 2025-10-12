@@ -18,7 +18,7 @@ function Services() {
 
             <div id="services-software-development" className="flex flex-col lg:flex-row justify-center items-center md:min-h-[50vh] p-15 md:p-30 lg:px-40">
                 <div className="image-container lg:ml-10">
-                    <img className="services-image" src={softwareDevImage} width={300} />
+                    <img className="services-image" alt="Software Development Services" src={softwareDevImage} width={300} />
                     <div className="inner-shadow"></div>
                 </div>
                 <div className="lg:ml-12 mt-10 lg:mt-0 text-center lg:text-left flex flex-col justify-center items-center lg:items-start">
@@ -33,14 +33,14 @@ function Services() {
                     <p className="text-lg mb-5 mt-2 lg:text-lg md:leading-10 lg:max-w-[700px] font-medium">Our design process starts with empathy. We create intuitive, elegant interfaces that not only look great—but work beautifully for real users.</p>
                 </div>
                 <div className="image-container lg:ml-10 lg:order-2 order-1">
-                    <img className="services-image" src={uiuxImage} width={300} />
+                    <img className="services-image" alt="UI/UX Design Services" src={uiuxImage} width={300} />
                     <div className="inner-shadow"></div>
                 </div>
             </div>
 
             <div id="services-branding" className="flex flex-col lg:flex-row justify-center items-center md:min-h-[50vh] p-15 md:p-20 lg:px-40 bg-white text-[var(--background)]">
                 <div className="image-container lg:ml-10">
-                    <img className="services-image" src={brandingImage} width={300} />
+                    <img className="services-image" alt="Branding & Visual Identity Services" src={brandingImage} width={300} />
                     <div className="inner-shadow"></div>
                 </div>
                 <div className="lg:ml-12 mt-10 lg:mt-0 text-center lg:text-left flex flex-col justify-center items-center lg:items-start">

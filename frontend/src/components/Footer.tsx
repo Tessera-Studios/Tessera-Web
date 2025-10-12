@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="md:flex justify-around bg-[var(--surface-purple)] px-10 md:px-5 py-10">
             <div id="section-1" className="flex flex-col gap-3 mb-15 md:mb-0">
-                <img src={logo} width={300} className="ml-[-15px]" />
+                <img src={logo} alt="Tessera Studios Logo" width={300} className="ml-[-15px]" />
                 <div className="bg-[var(--secondary)] w-full min-h-[1px]"></div>
                 <p className="text-center md:text-start text-sm md:text-base">Building your vision, one piece at a time!</p>
                 <p className="text-center md:text-start text-sm md:text-base">© 2025 Tessera Studios. All rights reserved.</p>

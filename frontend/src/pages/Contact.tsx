@@ -6,7 +6,7 @@ function Contact() {
     return (
         <>
             <div id="contact-landing" className="relative min-h-[100vh] p-8 py-30 md:py-40 flex flex-col justify-center items-center text-center">
-                  <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 -z-10">
                     <Silk
                         speed={8}
                         scale={1.2}
