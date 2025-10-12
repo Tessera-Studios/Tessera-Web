@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tesserastudios.com/sitemap.xml

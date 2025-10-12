@@ -24,6 +24,10 @@
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
+#about-what-sets-us-apart {
+  background: linear-gradient(to bottom, var(--deep-purple), var(--background));
+}
+
 .sets-us-apart-tile {
   background: linear-gradient(to bottom, var(--dark-purple), var(--accent));
   padding: 2.5rem;

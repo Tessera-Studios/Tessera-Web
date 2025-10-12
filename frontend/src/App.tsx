@@ -12,6 +12,7 @@ import Contact from './pages/Contact.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 
 
+
 function App() {
   useEffect(() => {
     AOS.init({
