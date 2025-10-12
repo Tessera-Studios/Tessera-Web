@@ -1,5 +1,5 @@
 import emblem from '/tessera-emblem.png';
-import landingImage from "../assets/about-landing.png"
+import landingImage from "../assets/about-landing.png";
 import ourApproachImage from "../assets/our-approach.png";
 import missionVisionBg from "../assets/vision-mision.mp4"
 import ContactCTA from '../components/ContactCTA';
@@ -10,7 +10,7 @@ function About() {
         <>
             <div className="overflow-x-hidden">
                 <div id="about-landing" className="flex justify-center items-center min-h-[100vh] px-12 md:p-20" style={{ backgroundImage: `url(${landingImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                    <div className="flex flex-col md:flex-row justify-center items-center mb-15">
+                    <div className="flex flex-col md:flex-row justify-center items-center">
                         <div className='md:mr-10 px-22 md:p-0'> <img src={emblem} alt="Tessera Studios Emblem" width={300} /></div>
                         <div className="mt-5 md:mt-0 md:w-[45vw] pb-20 md:pb-0">
                             <h2 className='text-2xl md:text-4xl mb-3 font-semibold'>Every Digital Experience Is A Mosaic</h2>
