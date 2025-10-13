@@ -1,5 +1,5 @@
 import emblem from '/tessera-emblem.png';
-import landingImage from "../assets/about-landing.png"
+import landingImage from "../assets/about-landing.png";
 import ourApproachImage from "../assets/our-approach.png";
 import missionVisionBg from "../assets/vision-mision.mp4"
 import ContactCTA from '../components/ContactCTA';
@@ -9,21 +9,19 @@ function About() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="about-landing" className="flex justify-center items-center min-h-[100vh] px-12 md:p-20" style={{ backgroundImage: `url(${landingImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                    <div className="flex flex-col md:flex-row justify-center items-center mb-15">
-                        <div className='md:mr-10 px-22 md:p-0'> <img src={emblem} alt="Tessera Studios Emblem" width={300} /></div>
-                        <div className="mt-5 md:mt-0 md:w-[45vw] pb-20 md:pb-0">
-                            <h2 className='text-2xl md:text-4xl mb-3 font-semibold'>Every Digital Experience Is A Mosaic</h2>
-                            <p className='md:leading-8'>At Tessera Studios, we believe digital products should feel like art—thoughtfully composed, built with care, and deeply connected to the people who use them.
-                                <br /><br />Our name comes from tesserae, the small, individual pieces of a mosaic—each one essential to the bigger picture.</p>
-                        </div>
+                <div id="about-landing" className="flex flex-col lg:flex-row justify-center items-center min-h-[110vh] md:min-h-[100vh] px-10 md:p-20" style={{ backgroundImage: `url(${landingImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                    <div className='md:mr-10 px-20 md:p-0'> <img src={emblem} alt="Tessera Studios Emblem" width={300} /></div>
+                    <div className="mt-5 lg:mt-0 lg:w-[45vw] pb-30 lg:pb-0">
+                        <h2 className='text-lg md:text-3xl lg:text-4xl mb-3 font-bold md:font-semibold'>Every Digital Experience Is A Mosaic</h2>
+                        <p className='leading-7 md:leading-8'>At Tessera Studios, we believe digital products should feel like art—thoughtfully composed, built with care, and deeply connected to the people who use them.
+                            <br /><br />Our name comes from tesserae, the small, individual pieces of a mosaic—each one essential to the bigger picture.</p>
                     </div>
                 </div>
 
-                <div id="about-who-we-are" className="flex flex-col md:flex-row justify-center items-center min-h-[100vh] md:min-h-[75vh] px-12 md:p-20 text-white">
+                <div id="about-who-we-are" className="flex flex-col md:flex-row justify-center items-center min-h-[100vh] md:min-h-[75vh] px-10 py-25 md:p-20 text-white">
                     <div className="lg:w-[36vw] md:p-2 py-10">
-                        <h2 className='text-4xl mb-5 font-semibold'>Who We Are</h2>
-                        <p className='md:leading-8 text-sm md:text-base'>We’re a creative team driven by a shared passion for building meaningful digital experiences.
+                        <h2 className='text-5xl mb-5 font-semibold'>Who We Are</h2>
+                        <p className='leading-7 md:leading-8 text-base'>We’re a creative team driven by a shared passion for building meaningful digital experiences.
                             <br /><br /> At Tessera Studios, users come first—every product we design and build is rooted in real human needs and thoughtful problem-solving.
                             <br /><br /> We’re committed to crafting immersive, flexible solutions that reflect your vision and deliver real impact.
                         </p>
@@ -35,7 +33,7 @@ function About() {
 
                 </div>
 
-                <div id="about-vision-mission" className="relative flex justify-center items-center min-h-[100vh] p-5 md:p-20">
+                <div id="about-vision-mission" className="relative flex justify-center items-center min-h-[100vh] p-10 md:p-20">
                     <video
                         autoPlay
                         loop
@@ -48,7 +46,7 @@ function About() {
 
                     <div className="absolute inset-0 bg-[var(--dark-purple)] opacity-65 z-5"></div>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center md:p-20">
+                    <div className="flex flex-col md:flex-row justify-center items-center md:p-20 gap-10 md:gap-0">
                         <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] md:mr-10 text-center min-w-[20vw]">
                             <h2 className='text-4xl mb-5 font-semibold'>Our Vision</h2>
                             <p className='text-start leading-8'>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>

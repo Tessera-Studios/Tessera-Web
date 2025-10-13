@@ -7,10 +7,10 @@ import ContactCTA from "../components/ContactCTA";
 function Services() {
     return (
         <>
-            <div id="services-landing" className="flex flex-col justify-center items-center md:text-center min-h-[100vh] p-10 md:p-20">
+            <div id="services-landing" className="flex flex-col justify-center items-center md:text-center min-h-[110vh] p-10 md:p-20">
                 <p className="text-4xl md:text-5xl text-center font-semibold mb-4">Our Services</p>
-                <p className="text-lg md:max-w-1/2 mb-5">Our services turn complex ideas into intuitive, modular solutions—creating digital experiences that drive engagement, growth, and long-term value.</p>
-                <button id="services-learn-more-button" onClick={() => {
+                <p className="text-lg md:max-w-1/2 mb-5 leading-8 md:leading-7">Our services turn complex ideas into intuitive, modular solutions—creating digital experiences that drive engagement, growth, and long-term value.</p>
+                <button id="services-learn-more-button" className="mb-20" onClick={() => {
                     const section = document.getElementById("services-software-development");
                     section?.scrollIntoView({ behavior: "smooth" });
                 }}>Learn More</button>

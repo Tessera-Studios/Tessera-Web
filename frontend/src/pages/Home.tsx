@@ -3,6 +3,7 @@ import ContactCTA from "../components/ContactCTA";
 import ourApproachImage from "../assets/our-approach.png"
 import tesseraTileImage from "../assets/tessera-emblem-light-purple-transparent.png"
 import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.png"
+import emblem from '/tessera-emblem.png';
 import Silk from "../components/Silk.tsx";
 import { Link } from "react-router-dom";
 
@@ -11,26 +12,27 @@ function Home() {
         <>
             <div className="overflow-x-hidden">
                 <div id="home-landing" className="flex flex-col justify-center items-center min-h-[100vh] p-5 md:p-10">
-                    <div>
-                        <h1 className="text-2xl sm:text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, One Piece at a Time</h1>
-                        <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)]">Software Design & Development Services</p>
+                        <img src={emblem} alt="Tessera Studios Emblem" className="block lg:hidden" width={150} height={150} />
+                        <h1 className="text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, <br className="block md:hidden"></br> One Piece at a Time</h1>
+                        <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)] mb-2 md:mb-0">Software Design & Development Services</p>
                         <button id="build-button" className="mt-6"><Link to="/contact">Let's Build!</Link></button>
-                    </div>
                 </div>
 
-                <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[35vh] bg-white text-black p-15">
+                <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[35vh] bg-white text-black p-8 md:p-15">
                     <h2 className="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-2">What We Do</h2>
                     <p className="text-center md:max-w-[75vw] lg:max-w-[35vw] py-2 leading-7">At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.</p>
-                    <button id="learn-more-button" className="mt-6"><Link to="/services">Learn More</Link></button>
+                    <button id="learn-more-button" className="mt-4 md:mt-6"><Link to="/services">Learn More</Link></button>
                 </div>
 
-                <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-20">
-                    <div className="image-container md:mr-5">
+                <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-8 py-20 md:p-20">
+                    <div className="px-20 md:p-0">
+                        <div className="image-container md:mr-5 mb-5 lg:mb-0">
                         <img className="our-approach-image" alt="Our Approach" src={ourApproachImage} width={300} height={300} />
                         <div className="inner-shadow"></div>
                     </div>
-                    <div className="text-container p-5 md:p-10 md:max-w-[50vw] lg:max-w-[35vw]">
-                        <h2 className="text-3xl md:text-5xl mb-5 font-semibold text-center md:text-start">Our Approach</h2>
+                    </div>
+                    <div className="text-container p-5 md:p-10 lg:max-w-[45vw]">
+                        <h2 className="text-3xl md:text-5xl mb-3   md:mb-5 font-semibold text-center lg:text-start">Our Approach</h2>
                         <div className="flex flex-col gap-6 md:text-lg">
                             <p>Our process combines design thinking with technical execution.</p>
                             <p>We pride ourselves on putting real users and business goals at the heart of every decision.</p>
