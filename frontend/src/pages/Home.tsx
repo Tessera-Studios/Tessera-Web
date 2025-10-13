@@ -25,12 +25,14 @@ function Home() {
                 </div>
 
                 <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-8 py-20 md:p-20">
-                    <div className="image-container md:mr-5 mb-10 lg:mb-0">
+                    <div className="px-20 md:p-0">
+                        <div className="image-container md:mr-5 mb-5 lg:mb-0">
                         <img className="our-approach-image" alt="Our Approach" src={ourApproachImage} width={300} height={300} />
                         <div className="inner-shadow"></div>
                     </div>
-                    <div className="text-container p-5 md:p-10 md:max-w-[50vw] lg:max-w-[35vw]">
-                        <h2 className="text-3xl md:text-5xl mb-5 font-semibold text-center md:text-start">Our Approach</h2>
+                    </div>
+                    <div className="text-container p-5 md:p-10 lg:max-w-[45vw]">
+                        <h2 className="text-3xl md:text-5xl mb-3   md:mb-5 font-semibold text-center lg:text-start">Our Approach</h2>
                         <div className="flex flex-col gap-6 md:text-lg">
                             <p>Our process combines design thinking with technical execution.</p>
                             <p>We pride ourselves on putting real users and business goals at the heart of every decision.</p>
