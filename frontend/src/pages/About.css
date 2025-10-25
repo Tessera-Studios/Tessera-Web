@@ -25,16 +25,61 @@
 }
 
 #about-what-sets-us-apart {
-  background: linear-gradient(to bottom, var(--deep-purple), var(--background));
+  background: linear-gradient(to top, var(--deep-purple), var(--background));
+  overflow: hidden;
+}
+
+#sets-us-apart-tiles {
+  position: relative;
+  width: 100%;
 }
 
 .sets-us-apart-tile {
   background: linear-gradient(to bottom, var(--dark-purple), var(--accent));
-  padding: 2.5rem;
+  padding: 5rem 8rem;
   border-radius: 1rem;
   text-align: center;
 
-  p {
-    text-align: start;
+  i {
+    font-size: 10rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
+
+  clip-path: polygon( 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% );
+  width: 35rem;
+  height: 30rem;
+}
+
+
+#tile-1 {
+  position: absolute;
+  top: 18rem;
+  left: calc(50% - 48rem);
+}
+
+#tile-2 {
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 20rem);
+  width: 40rem;
+  height: 35rem;
+}
+
+#tile-3 {
+  position: absolute;
+  top: 18rem;
+  left: calc(50% + 13rem);
+}
+
+#tile-4 {
+  position: absolute;
+  top: 40rem;
+  left: calc(50% + 5rem);
+}
+
+#tile-5 {
+  position: absolute;
+  top: 40rem;
+  left: calc(50% - 40rem);
 }

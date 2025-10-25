@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
             <div className="overflow-x-hidden">
-                <div id="home-landing" className="flex flex-col justify-center items-center min-h-[100vh] p-5 md:p-10">
+                <div id="home-landing" className="flex flex-col justify-center items-center md:min-h-[100vh] p-5 md:p-10">
                         <img src={emblem} alt="Tessera Studios Emblem" className="block lg:hidden" width={150} height={150} />
                         <h1 className="text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, <br className="block md:hidden"></br> One Piece at a Time</h1>
                         <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)] mb-2 md:mb-0">Software Design & Development Services</p>
@@ -32,7 +32,7 @@ function Home() {
                     </div>
                     </div>
                     <div className="text-container p-5 md:p-10 lg:max-w-[45vw]">
-                        <h2 className="text-3xl md:text-5xl mb-3   md:mb-5 font-semibold text-center lg:text-start">Our Approach</h2>
+                        <h2 className="text-3xl md:text-5xl mb-3 md:mb-5 font-semibold text-center lg:text-start">Our Approach</h2>
                         <div className="flex flex-col gap-6 md:text-lg">
                             <p>Our process combines design thinking with technical execution.</p>
                             <p>We pride ourselves on putting real users and business goals at the heart of every decision.</p>
