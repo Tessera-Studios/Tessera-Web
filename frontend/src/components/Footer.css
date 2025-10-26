@@ -1,0 +1,28 @@
+#section-2 a {
+  position: relative;
+  background: linear-gradient(
+    to right, 
+    var(--secondary) 0%, 
+    var(--secondary) 45%,
+    white 55%,
+    white 100%
+  );
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-2 a:hover {
+  background-position: 0 0;
+  transition: background-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#section-2 a.active {
+  background: var(--secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
