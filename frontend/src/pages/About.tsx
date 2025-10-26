@@ -77,12 +77,12 @@ function About() {
 
                     <div className="absolute inset-0 bg-[var(--dark-purple)] opacity-65 z-5"></div>
 
-                    <div className="flex flex-col md:flex-row justify-center items-center md:p-20 gap-10 md:gap-0">
-                        <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] md:mr-10 text-center min-w-[20vw]">
+                    <div className="flex flex-col lg:flex-row justify-center items-center md:p-20 gap-10 lg:gap-0">
+                        <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_left,var(--dark-purple),var(--accent))] lg:mr-10 text-center min-w-[20vw]">
                             <h2 className='text-4xl mb-5 font-semibold'>Our Vision</h2>
                             <p className='text-start leading-8'>To be the leading creator of modular, user-centered digital experiences that blend design, technology, and storytelling—empowering businesses and enriching lives, globally.</p>
                         </div>
-                        <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_right,var(--dark-purple),var(--accent))] md:ml-10 text-center min-w-[20vw]">
+                        <div className="vision-mission-tile p-10 md:p-15 rounded-lg text-white z-10 bg-[linear-gradient(to_right,var(--dark-purple),var(--accent))] lg:ml-10 text-center min-w-[20vw]">
                             <h2 className='text-4xl mb-5 font-semibold'>Our Mission</h2>
                             <p className='text-start leading-8'>To craft innovative, scalable digital solutions that are as thoughtful as they are powerful—connecting clients with their users through precision, creativity, and care.</p>
                         </div>
