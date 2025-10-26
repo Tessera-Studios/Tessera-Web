@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png"
+import "./Footer.css";
 
 function Footer() {
     return (
@@ -13,10 +14,10 @@ function Footer() {
 
             <div id="section-2" className="flex flex-col gap-3 mb-10 md:mb-0 text-center md:text-start">
                 <p className="text-3xl block md:hidden mb-2">Quick Links</p>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+                <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>Services</NavLink>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
             </div>
 
             <div id="section-3" className="flex flex-col gap-4 mb-10 md:mb-0 text-center md:text-start">
