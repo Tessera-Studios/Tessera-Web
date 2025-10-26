@@ -17,7 +17,11 @@ function Contact() {
                 </div>
 
                 <div id="contact-form" className="flex flex-col justify-center items-center p-10 md:px-30 md:py-20">
-                    <img src={emblem} alt="Tessera Studios Emblem" className="w-20 h-20 mb-2" />
+                    <img id="contact-emblem" src={emblem} alt="Tessera Studios Emblem" className="w-20 h-20 mb-2 spinner hover:cursor-pointer"
+                        onClick={() => {
+                            document.getElementById("contact-emblem")?.classList.toggle("easter-egg-spinner");
+                            setTimeout(() => { document.getElementById("contact-emblem")?.classList.toggle("easter-egg-spinner"); }, 4000);
+                        }} />
                     <h1 className="text-2xl md:text-4xl font-semibold mb-8 text-center">Let's Get in Touch</h1>
                     <form className="flex flex-col justify-start items-start gap-5 w-full ">
                         <label htmlFor="name">Name</label>
