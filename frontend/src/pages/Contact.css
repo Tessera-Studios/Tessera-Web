@@ -1,7 +1,4 @@
 #contact-landing {
-  /* background: linear-gradient(to bottom, var(--background), #24116f00),
-    url("../assets/tessera-mosaic.png"),
-    linear-gradient(to bottom, var(--background), #24116f00); */
   background-size: cover;
 }
 
@@ -48,8 +45,12 @@
   box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
 }
 
-.spinnyBoy {
-  animation: spin 2s ease-in-out infinite;
+.spinner {
+  animation: spin 3s ease-in-out infinite;
+}
+
+.easter-egg-spinner {
+  animation: easter-egg-spin 4s linear;
 }
 
 @keyframes spin {
@@ -64,27 +65,27 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .spinnyBoy {
-    animation: spin 4s linear infinite;
+@keyframes easter-egg-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(360deg);
+  }
+  18% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg) translateX(150px);
   }
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    15% {
-      transform: rotate(360deg);
-    }
-    18% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-15deg) translateX(150px);
-    }
+  50% {
+    transform: rotate(0deg) translateX(-137px);
+  }
+}
 
-    50% {
-      transform: rotate(0deg) translateX(-137px);
-    }
+@media screen and (max-width: 768px) {
+  #contact-form {
+    padding: 1.5rem;
   }
 }
