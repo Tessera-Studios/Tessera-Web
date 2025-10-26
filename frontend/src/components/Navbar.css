@@ -1,9 +1,28 @@
+.nav-link {
+  position: relative;
+  background: linear-gradient(
+    to right, 
+    var(--secondary) 0%, 
+    var(--secondary) 45%,
+    white 55%,
+    white 100%
+  );
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .nav-link:hover {
-  color: var(--secondary);
-  transition: 0.25s ease-in-out;
+  background-position: 0 0;
 }
 
 .active {
-  color: var(--secondary);
+  background: var(--secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500;
 }
