@@ -89,7 +89,7 @@ function About() {
                     </div>
                 </div>
 
-                <div id="about-what-sets-us-apart" className="flex flex-col items-center sm:min-h-[100vh] md:min-h-[70vh] min-h-[100vh] p-10 py-20">
+                <div id="about-what-sets-us-apart" className="flex flex-col items-center sm:min-h-[100vh] md:min-h-[70vh] lg:min-h-[100vh] min-h-[100vh] p-10 py-20">
                     <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-8">What Sets Us Apart</h2>
 
                     <div id="sets-us-apart-tiles" className='md:px-20'>
