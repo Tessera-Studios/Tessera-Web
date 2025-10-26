@@ -34,28 +34,70 @@
   width: 100%;
 }
 
+/* Carousel chevrons */
+.carousel-chevron {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  background: rgba(17, 17, 26, 0.5);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(87, 72, 208, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  z-index: 20;
+  cursor: pointer;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.carousel-chevron:hover {
+  transform: scale(1.08);
+}
+.carousel-chevron:active {
+  transform: scale(0.98);
+}
+
+/* Positioning: slightly above tiles 3 (left) and 1 (right) */
+#chev-left {
+  top: 12rem;
+  left: calc(50% - 47rem + 18rem);
+}
+#chev-right {
+  top: 12rem;
+  left: calc(50% + 11rem + 18rem);
+}
+
 .sets-us-apart-tile {
-  background: linear-gradient(to bottom, var(--dark-purple), var(--accent));
+  background: url("../assets/polygon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 5rem 8rem;
   border-radius: 1rem;
   text-align: center;
+  width: 36rem;
+  height: 32rem;
+  opacity: 0.25;
+
+  transition: top 1.5s ease-in-out, left 1.5s ease-in-out,
+    width 1.5s ease-in-out, height 1.5s ease-in-out, opacity 1.5s ease-in-out,
+    padding 1.5s ease-in-out;
 
   i {
     font-size: 10rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    color: var(--secondary);
   }
-
-  clip-path: polygon( 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% );
-  width: 35rem;
-  height: 30rem;
 }
-
 
 #tile-1 {
   position: absolute;
-  top: 18rem;
-  left: calc(50% - 48rem);
+  top: 17rem;
+  left: calc(50% + 11rem);
 }
 
 #tile-2 {
@@ -64,22 +106,112 @@
   left: calc(50% - 20rem);
   width: 40rem;
   height: 35rem;
+  opacity: 1;
+  padding: 5rem 11rem;
+  z-index: 10;
+
+  transition: top 1.5s ease-in-out, left 1.5s ease-in-out,
+    width 1.5s ease-in-out, height 1.5s ease-in-out, opacity 0.5s ease-in-out,
+    padding 1.5s ease-in-out;
 }
 
 #tile-3 {
   position: absolute;
-  top: 18rem;
-  left: calc(50% + 13rem);
+  top: 17rem;
+  left: calc(50% - 47rem);
 }
 
 #tile-4 {
   position: absolute;
-  top: 40rem;
-  left: calc(50% + 5rem);
+  top: 50rem;
+  left: calc(50% - 40rem);
+
+  transition: top 1s ease-in-out, left 1.5s ease-in-out, width 1.5s ease-in-out,
+    height 1.5s ease-in-out, opacity 0.5s ease-in-out, padding 1.5s ease-in-out;
 }
 
 #tile-5 {
   position: absolute;
-  top: 40rem;
-  left: calc(50% - 40rem);
+  top: 50rem;
+  left: calc(50% + 5rem);
+
+  transition: top 1s ease-in-out, left 1.5s ease-in-out, width 1.5s ease-in-out,
+    height 1.5s ease-in-out, opacity 0.5s ease-in-out, padding 1.5s ease-in-out;
+}
+
+.carousel-chevron {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  background: rgba(17, 17, 26, 0.5);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(87, 72, 208, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  z-index: 20;
+  cursor: pointer;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  #about-what-sets-us-apart {
+    padding: 9rem 2rem;
+  }
+
+  #sets-us-apart-tiles {
+    i {
+      font-size: 8rem;
+    }
+  }
+
+  #tile-1 {
+    top: 15rem;
+    left: calc(50% + 6rem);
+    padding: 4rem 10rem;
+    width: 37rem;
+    height: 32rem;
+  }
+
+  #tile-2 {
+    top: -1rem;
+    left: calc(50% - 19rem);
+    padding: 4rem 10rem;
+    width: 37rem;
+    height: 32rem;
+  }
+
+  #tile-3 {
+    top: 15rem;
+    left: calc(50% - 44rem);
+    padding: 4rem 10rem;
+    width: 37rem;
+    height: 32rem;
+  }
+
+  #tile-4 {
+    top: 42rem;
+    left: calc(50% - 45rem);
+    padding: 4rem 10rem;
+    width: 37rem;
+    height: 32rem;
+  }
+
+  #tile-5 {
+    top: 42rem;
+    left: calc(50% + 7rem);
+    padding: 4rem 10rem;
+    width: 37rem;
+    height: 32rem;
+  }
+
+  .carousel-chevron {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    position: absolute;
+  }
 }
