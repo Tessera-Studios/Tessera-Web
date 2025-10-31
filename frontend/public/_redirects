@@ -1,3 +1,10 @@
+
+# Explicitly serve the SPA index for the contact success route so React Router can render it
+/contact-success    /index.html   200
+
+# Fallback: serve index.html for all other routes (SPA)
+/*    /index.html   200
+
 /*    /index.html   200
 
 ttps://tessera-studios.com/*  https://www.tessera-studios.com/:splat  301!
