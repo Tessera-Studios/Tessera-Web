@@ -9,6 +9,7 @@ import Footer from './components/Footer.tsx';
 import About from './pages/About.tsx';
 import Services from './pages/Services.tsx';
 import Contact from './pages/Contact.tsx';
+import ContactSuccess from './pages/ContactSuccess.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 import Error from './pages/Error.tsx';
 
@@ -33,7 +34,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-success" element={<ContactSuccess />} />
         <Route path="*" element={<Error />} />
       </Routes>
 
