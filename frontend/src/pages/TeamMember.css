@@ -1,0 +1,94 @@
+#member-summary {
+  background: linear-gradient(to bottom, var(--background), var(--deep-purple));
+}
+
+#key-skills {
+  background: linear-gradient(to top, var(--background), var(--deep-purple));
+}
+
+.skill {
+  background: linear-gradient(to left, var(--accent), var(--dark-purple));
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.skills-grid .skill {
+  width: 100%;
+}
+
+#member-image {
+  border: 2px solid var(--primary);
+  box-shadow: 0px 0px 15px 4px var(--accent);
+}
+
+#highlighted-achievements {
+  padding-top: 1rem;
+  background: linear-gradient(to bottom, var(--background), var(--deep-purple));
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.achievement-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, rgba(87,72,208,0.14), rgba(87,72,208,0.06));
+  border: 1px solid rgba(87,72,208,0.18);
+  transition: transform 250ms cubic-bezier(0.22, 0.9, 0.32, 1), box-shadow 250ms ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(16, 12, 38, 0.35);
+}
+
+.achievement-card .achievement-index {
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  box-shadow: 0 6px 18px rgba(16,12,38,0.25);
+}
+
+.achievement-card .achievement-text {
+  color: #dedede;
+  /* line-height: 1.8; */
+}
+
+@media screen and (max-width: 768px) {
+  .achievements-grid { grid-template-columns: 1fr; }
+  .achievement-card { padding: 0.75rem; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .achievements-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media screen and (min-width: 1024px) {
+  .achievements-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Skills grid breakpoints */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (min-width: 1024px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
