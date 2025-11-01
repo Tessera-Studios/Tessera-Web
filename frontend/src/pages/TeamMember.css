@@ -39,7 +39,7 @@
 .achievement-card {
   display: flex;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.5rem;
   border-radius: 0.75rem;
   background: linear-gradient(180deg, rgba(87,72,208,0.14), rgba(87,72,208,0.06));
