@@ -22,7 +22,7 @@ export default function TeamMember() {
         <>
             <div id="member-summary" className="min-h-[100vh] p-10 flex flex-col items-center justify-center">
                 <div className="flex gap-15 mt-10">
-                    <img src={member?.image} alt={member?.name} className="w-90 h-110 object-cover rounded-lg" />
+                    <img id="member-image" src={member?.image} alt={member?.name} className="w-90 h-110 object-cover rounded-lg" />
                     <div>
                         <h1 className="text-4xl font-semibold">{member?.name}</h1>
                         <p className="mt-3 text-2xl text-[var(--secondary)]">{member?.role}</p>

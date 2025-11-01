@@ -9,3 +9,8 @@
 .skill {
   background: linear-gradient(to left, var(--accent), var(--dark-purple));
 }
+
+#member-image {
+  border: 2px solid var(--primary);
+  box-shadow: 0px 0px 15px 2px var(--accent);
+}
