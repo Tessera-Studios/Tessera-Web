@@ -22,7 +22,7 @@ export default function TeamMember() {
         <>
             <div id="member-summary" className="min-h-[100vh] p-10 flex flex-col items-center justify-center py-25 md:p-0">
                 <div className="flex flex-col lg:flex-row gap-15 mt-10">
-                    <img id="member-image" src={member?.image} alt={member?.name} className="w-80 h-90 md:w-full md:h-3/4 lg:w-90 md:h-100 object-cover rounded-lg" />
+                    <img id="member-image" src={member?.image} alt={member?.name} className=" h-90 w-full md:h-3/4 lg:w-90 md:h-100 object-cover rounded-lg" />
                     <div>
                         <h1 className="text-4xl font-semibold">{member?.name}</h1>
                         <p className="mt-3 text-2xl text-[var(--secondary)]">{member?.role}</p>
@@ -40,7 +40,7 @@ export default function TeamMember() {
                 </div>
             </div>
 
-            <div id="key-skills" className='min-h-[80vh] md:min-h-[60vh] px-10 md:px-30 lg:px-60 pb-20 lg:py-0'>
+            <div id="key-skills" className='min-h-[80vh] md:min-h-[60vh] px-10 md:px-30 lg:px-60 lg:pb-20 lg:py-0'>
                 <h1 className='text-xl md:text-3xl mb-5'>Key Skills</h1>
                 <div className="skills-grid">
                     {member.skills.map((skill, index) => (

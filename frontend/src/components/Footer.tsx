@@ -20,7 +20,7 @@ function Footer() {
                 <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
             </div>
 
-            <div id="section-3" className="flex flex-col gap-4 mb-10 md:mb-0 text-center md:text-start">
+            <div id="section-3" className="flex flex-col gap-2 mb-10 md:mb-0 text-center md:text-start">
                 <p className="text-3xl">Connect With Us</p>
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fa-solid fa-envelope text-[var(--secondary)]"></i>
@@ -29,6 +29,11 @@ function Footer() {
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fab fa-linkedin text-[var(--secondary)]"></i>
                     <a href="https://www.linkedin.com/company/tesserastudios" target="_blank" rel="noopener noreferrer">Tessera Studios</a>
+                </div>
+
+                <div className="flex items-center gap-2 ml-8 md:ml-0">
+                     <i className="fa fa-map-marker-alt text-[var(--secondary)]"></i>
+                    <p>St.James, Barbados</p>
                 </div>
             </div>
         </div>
