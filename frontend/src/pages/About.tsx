@@ -142,9 +142,9 @@ function About() {
                     </div>
                 </div>
 
-                <div id="about-our-team" className="flex flex-col justify-center items-center min-h-[100vh] p-10 md:p-20">
+                <div id="about-our-team" className="flex flex-col justify-center items-center md:min-h-[70vh] min-h-[100vh] p-15 md:p-20">
                     <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-8">Our Tesseras</h2>
-                        <div className="team-members-container flex gap-6">
+                        <div className="team-members-container md:flex md:gap-6">
                             <Link to="/team/tarika" className="team-member-card" style={{ backgroundImage: `url(${tarikaImage})` }}>
                                 <h1 className="team-member-name font-semibold">Tarika Birch</h1>
                                 <p className="team-member-role opacity-85">Founder</p>
