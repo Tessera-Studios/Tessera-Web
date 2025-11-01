@@ -22,7 +22,7 @@ export default function TeamMember() {
         <>
             <div id="member-summary" className="min-h-[100vh] p-10 flex flex-col items-center justify-center">
                 <div className="flex gap-15 mt-10">
-                    <img id="member-image" src={member?.image} alt={member?.name} className="w-90 h-110 object-cover rounded-lg" />
+                    <img id="member-image" src={member?.image} alt={member?.name} className="w-90 h-100 object-cover rounded-lg" />
                     <div>
                         <h1 className="text-4xl font-semibold">{member?.name}</h1>
                         <p className="mt-3 text-2xl text-[var(--secondary)]">{member?.role}</p>
@@ -32,33 +32,36 @@ export default function TeamMember() {
                             ))}</p>
                         </div>
                         <div className='flex gap-5 mt-5 text-2xl'>
-                            <Link to={member.socialLinks.linkedin}><i className="fab fa-linkedin"></i></Link>
-                            <Link to={member.socialLinks.github}><i className="fab fa-github"></i></Link>
-                            <Link to={member.socialLinks.portfolio}><i className="fas fa-briefcase"></i></Link>
+                            <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
+                            <a href={member.socialLinks.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i className="fab fa-github"></i></a>
+                            <a href={member.socialLinks.portfolio} target="_blank" rel="noopener noreferrer" aria-label="Portfolio"><i className="fas fa-briefcase"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="key-skills" className='min-h-[95vh] px-60'>
+            <div id="key-skills" className='min-h-[60vh] px-60'>
                 <h1 className='text-3xl mb-5'>Key Skills</h1>
-                <div className="flex flex-col gap-5">
+                <div className="skills-grid">
                     {member.skills.map((skill, index) => (
                         <div key={index} className='skill py-7 px-8 rounded-md flex items-center'>
-                            <img src={emblem} alt="Tessera Emblem" className="w-8 h-8 inline-block mr-2" />
+                            <img src={emblem} alt="Tessera Emblem" className="w-8 h-8 inline-block mr-3" />
                             <p>{skill}</p>
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div id="highlighted-achievements" className='min-h-[70vh] px-60'>
+            <div id="highlighted-achievements" className='min-h-[70vh] px-60 py-30'>
                 <h1 className='text-3xl mb-5'>Highlighted Achievements</h1>
-                <ul className='list-disc pl-5'>
+                <div className="achievements-grid">
                     {member.achievements.map((achievement, index) => (
-                        <li key={index} className='py-2 leading-8'>{achievement}</li>
+                        <div key={index} className='achievement-card'>
+                            <div className="achievement-index">{index + 1}</div>
+                            <div className="achievement-text">{achievement}</div>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </>
     );

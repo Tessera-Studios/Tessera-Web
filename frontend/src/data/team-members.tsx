@@ -17,7 +17,7 @@ export const members: Record<string, MembersList> = {
         role: 'Founder',
         bio: [
             'Tarika Birch is a Software Engineer and Creative Technologist passionate about blending art and technology to craft meaningful digital experiences.', 
-            'With experience spanning software engineering, UI/UX, and graphic design, she brings both technical depth and a designer’s eye to building products that inspire and engage.'
+            'With experience spanning software engineering, UI/UX, and graphic design, she brings both technical depth and a designer’s eye to building products that inspire and engage.',
         ],
         image: tarikaImage,
         socialLinks: {
@@ -28,13 +28,14 @@ export const members: Record<string, MembersList> = {
         skills: [
             'Software Development',
             'UIUX Design',
+            'Problem Solving',
             'Graphic Design',
             'Branding & Marketing',
             'Project Management',
         ],
         achievements: [
             'BSc. Computer Science with Management, First Class Honours',
-            '2025 Health Tech Fellow, Machine Learning - FluoretiQ in collaboration with FutureHealth ',
+            '2025 Health Tech Fellow, Machine Learning - FluoretiQ and FutureHealth ',
             '2024/25 Vice President, Computer Science Society, UWI',
             '2025 Winner of the Windrush I Accelerator Program - Microsoft UK and UWI',
             '3rd Place, Barbados AI Fraud Detection Hackathon - Zindi',
@@ -56,6 +57,7 @@ export const members: Record<string, MembersList> = {
             'Problem Solving',
             'Agile Methodologies',
             'Version Control',
+            'Utility Software',
         ],
         socialLinks: {
             linkedin: 'https://www.linkedin.com/in/isaiah-carrington',
@@ -63,8 +65,9 @@ export const members: Record<string, MembersList> = {
             portfolio: 'https://isaiahsama.github.io/',
         },
         achievements: [
+            '2x Microsoft Software Engineering Intern',
             '2024/25 President, Computer Science Society, UWI ',
-            '2023/24 Former Head Developer, Computer Science Society, UWI',
+            '2023/24 Head Developer, Computer Science Society, UWI',
             '2023/24 CMP Chairperson - FST, UWI ',
             'Zindi Ambassador, Barbados',
             '3rd Place, Barbados AI Fraud Detection Hackathon - Zindi',
