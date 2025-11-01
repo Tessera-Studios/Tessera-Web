@@ -31,7 +31,7 @@ export default function TeamMember() {
                                 <p key={index} className='mb-6'>{paragraph}</p>
                             ))}</p>
                         </div>
-                        <div className='flex gap-3 mt-5 text-xl'>
+                        <div className='flex gap-5 mt-5 text-2xl'>
                             <Link to={member.socialLinks.linkedin}><i className="fab fa-linkedin"></i></Link>
                             <Link to={member.socialLinks.github}><i className="fab fa-github"></i></Link>
                             <Link to={member.socialLinks.portfolio}><i className="fas fa-briefcase"></i></Link>
