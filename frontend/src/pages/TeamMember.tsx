@@ -40,7 +40,7 @@ export default function TeamMember() {
                 </div>
             </div>
 
-            <div id="key-skills" className='min-h-[80vh]md:min-h-[60vh] px-10 md:px-30 lg:px-60 pb-20 lg:py-0'>
+            <div id="key-skills" className='min-h-[80vh] md:min-h-[60vh] px-10 md:px-30 lg:px-60 pb-20 lg:py-0'>
                 <h1 className='text-xl md:text-3xl mb-5'>Key Skills</h1>
                 <div className="skills-grid">
                     {member.skills.map((skill, index) => (
