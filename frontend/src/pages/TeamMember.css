@@ -1,0 +1,11 @@
+#member-summary {
+  background: linear-gradient(to bottom, var(--background), var(--deep-purple));
+}
+
+#key-skills {
+  background: linear-gradient(to top, var(--background), var(--deep-purple));
+}
+
+.skill {
+  background: linear-gradient(to left, var(--accent), var(--dark-purple));
+}

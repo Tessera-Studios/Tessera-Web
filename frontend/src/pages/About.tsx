@@ -4,7 +4,10 @@ import ourApproachImage from "../assets/our-approach.png";
 import missionVisionBg from "../assets/vision-mision.mp4"
 import ContactCTA from '../components/ContactCTA';
 import "./About.css";
+import tarikaImage from "../assets/tarika-birch-team-tile.png";
+import isaiahImage from "../assets/isaiah-carrington-team-tile.png";
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
     const intervalRef = useRef<number | null>(null);
@@ -137,6 +140,22 @@ function About() {
                             <p className="md:leading-7">No corner is cut, every piece matters.</p>
                         </div>
                     </div>
+                </div>
+
+                <div id="about-our-team" className="flex flex-col justify-center items-center min-h-[100vh] p-10 md:p-20">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-8">Our Tesseras</h2>
+                        <div className="team-members-container flex gap-6">
+                            <Link to="/team/tarika" className="team-member-card" style={{ backgroundImage: `url(${tarikaImage})` }}>
+                                <h1 className="team-member-name font-semibold">Tarika Birch</h1>
+                                <p className="team-member-role opacity-85">Founder</p>
+                                <button className='view-profile-button hidden'>View Profile</button>
+                            </Link>
+                            <Link to="/team/isaiah" className="team-member-card" style={{ backgroundImage: `url(${isaiahImage})` }}>
+                                <h1 className="team-member-name font-semibold">Isaiah Carrington</h1>
+                                <p className="team-member-role opacity-85">Technical Co-Founder</p>
+                                <button className='view-profile-button hidden'>View Profile</button>
+                            </Link>
+                        </div>
                 </div>
 
                 <ContactCTA />

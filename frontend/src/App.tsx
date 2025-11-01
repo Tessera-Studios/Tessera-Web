@@ -12,6 +12,7 @@ import Contact from './pages/Contact.tsx';
 import ContactSuccess from './pages/ContactSuccess.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 import Error from './pages/Error.tsx';
+import TeamMember from './pages/TeamMember';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+  <Route path="/team/:memberId" element={<TeamMember />} />
         <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact-success" element={<ContactSuccess />} />
