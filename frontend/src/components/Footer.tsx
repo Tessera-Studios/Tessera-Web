@@ -33,7 +33,7 @@ function Footer() {
 
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                      <i className="fa fa-map-marker-alt text-[var(--secondary)]"></i>
-                    <p>St.James, Barbados</p>
+                    <p>St. James, Barbados</p>
                 </div>
             </div>
         </div>
