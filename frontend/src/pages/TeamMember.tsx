@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import './About.css';
 import { members } from '../data/team-members';
 import './TeamMember.css'
@@ -7,6 +8,11 @@ import emblem from '../assets/tessera-emblem-white-transparent.png'
 export default function TeamMember() {
     const { memberId } = useParams<{ memberId: string }>();
     const member = memberId ? members[memberId] : undefined;
+
+    useEffect(() => {
+        if (member) document.title = `Tessera Studios | ${member.name}`;
+        else document.title = 'Tessera Studios | Team';
+    }, [member]);
 
     if (!member) {
         return (

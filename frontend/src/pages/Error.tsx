@@ -1,8 +1,10 @@
 import "./Error.css";
 import { Link } from "react-router-dom";
 import emblem from "../assets/error-emblem.png"
+import { useEffect } from 'react';
 
 function Error() {
+    useEffect(() => { document.title = 'Tessera Studios | 404'; }, []);
     return (
         <div id="error-page" className="flex flex-col justify-center items-center min-h-[100vh] p-10 md:p-20 text-center">
             <img src={emblem} alt="404 Not Found" className="mb-5 max-w-full h-auto animate-bounce" width={200} />
