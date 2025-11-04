@@ -65,7 +65,7 @@ You will need the following software installed on your machine:
     # OR Using Yarn
     yarn start
     ```
-    The website will typically be available at `http://localhost:3000`.
+    The website will typically be available at `http://localhost:5173`.
 
 ---
 
@@ -96,3 +96,4 @@ Publish Directory: dist
 Distributed under the MIT License. See LICENSE for more information.
 
 © 2024 Tessera Studios. All Rights Reserved.
+
