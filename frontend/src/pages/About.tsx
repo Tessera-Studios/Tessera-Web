@@ -12,6 +12,10 @@ import { Link } from 'react-router-dom';
 function About() {
     const intervalRef = useRef<number | null>(null);
 
+    useEffect(() => {
+        document.title = 'Tessera Studios | About';
+    }, []);
+
     function cycleTiles(direction: 1 | -1 = 1) {
         const tiles = document.querySelectorAll<HTMLElement>('.sets-us-apart-tile');
         tiles.forEach((tile) => {

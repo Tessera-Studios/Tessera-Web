@@ -1,10 +1,14 @@
 import "./Services.css";
+import { useEffect } from 'react';
 import softwareDevImage from "../assets/software-development.png";
 import uiuxImage from "../assets/uiux.png";
 import brandingImage from "../assets/brand-identity.png";
 import ContactCTA from "../components/ContactCTA";
 
 function Services() {
+    useEffect(() => {
+        document.title = 'Tessera Studios | Services';
+    }, []);
     return (
         <>
             <div id="services-landing" className="flex flex-col justify-center items-center md:text-center min-h-[110vh] p-10 md:p-20">

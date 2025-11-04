@@ -1,8 +1,12 @@
 import "./Contact.css";
 import Silk from "../components/Silk";
 import emblem from "../assets/tessera-emblem-light-purple-transparent.png";
+import { useEffect } from 'react';
 
 function Contact() {
+    useEffect(() => {
+        document.title = 'Tessera Studios | Contact';
+    }, []);
     return (
         <>
             <div id="contact-landing" className="relative min-h-[100vh] p-8 py-30 md:py-40 flex flex-col justify-center items-center text-center">

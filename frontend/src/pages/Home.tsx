@@ -6,8 +6,13 @@ import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.pn
 import emblem from '/tessera-emblem.png';
 import Silk from "../components/Silk.tsx";
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Tessera Studios';
+    }, []);
+
     return (
         <>
             <div className="overflow-x-hidden">
