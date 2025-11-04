@@ -1,57 +1,84 @@
-# Dev file for TesseraWeb
+# Dev Doc for Tessera Web
 
-This document will outline the software architecture for the Tessera Website, a website designed to showcase Tessera as a company.
+This document outlines the software architecture and development workflow for the Tessera website — the company website for Tessera Studios.
 
-This document will be divided into the following sections
+## Sections
 
 - Purpose
 - Architecture
+- Building
+- CI/CD
+- Workflow & Contributions
 
 ## Purpose
 
 The purpose of the Tessera website, is to serve as an introductory source for the Tessera company. This will be a location where interested parties (clients or partners) will be able to learn about Tessera as a company, its services, features and the like.
 
-Components will include:
+Primary Components:
+- Landing page with mission statement, highlights, and calls-to-action
+- About page with company background and team information
+- Services page describing offerings and capabilities
+- Contact page for inquiries and quote requests
+- Blog/news page for announcements and thought leadership (future feature)
 
-- Landing page with introductory information, such as mission statement, aims, and capabilities.
-- About page with information about the company, and the team.
-- Services page outlining Tessera's Services in detail
-- Contact page providing access for clients and / or partners to reach out to staff at the company for queries or to request quotations.
-- Blog page with latest blog news relating to Tessera (optional)
-
-Tessera Web should aim to be a pleasant, fast experience for users, allowing them to quickly get the information they require, and be driven to request our services.
+Goals:
+- Deliver a pleasant, performant, and accessible user experience
+- Make content updates easy via a CMS
+- Ensure good SEO, social previews, and analytics integration
 
 ## Architecture
 
 Tessera will aim to provide a minimalist yet impactful experience for visitors. As such, we will leverage the following tools:
 
-- ReactJS for the User Interface.
-- NextJS as a framework to assist with building out the UI.
-- Contentful for the Content Management System, to simplify updating content.
-- Nginx runtime to serve static pages.
-- Static Site Generation (SSG) for ensuring all content is available at build time.
-- Google Cloud Run as the hosting provider.
+- React for the User Interface.
+- Vite for React Setup
+- TypeScript for Type Safety
+- Contentful for the Content Management System, to simplify updating content (future)
+- Netlify for Hosting & CI/CD
+
+## Development
+
+Repository layout:
+- frontend/ — front-end source code, package.json, build scripts, Dockerfile (if present)
+- (other directories may be created for backend, docs, etc.)
+
+Local development:
+1. Install dependencies
+   cd frontend
+   npm install
+
+2. Start dev server
+   cd frontend
+   npm run dev
+
+- Local site should run at http://localhost:5173
+
+Use feature branches for work:
+- feature/<short-description>
+- fix/<short-description>
+
+Keep commits focused and add clear commit messages.
 
 ## Building
 
-This full project can be built locally using docker as follows:
+Build the production artifacts:
+  cd frontend
+  npm run build
 
-```sh
+## Local environment & configuration
 
-cd frontend
-docker build -t tesseraweb .
-docker run --rm -p 80:8080 tesseraweb # This will temporarily run the server
-```
+Do not commit secrets. Use a .env file for local environment variables and add a .env.example with placeholders in the repo.
 
-You will then be able to view the project at `http://localhost.com`
+## CI/CD
 
-For development, the nginx server does not need to be run, and the project can be built as follows:
+- Ensure CI validates linting, type checks, and builds.
+- Use branch protection rules on the main branch and require PR reviews and passing CI checks.
 
-```sh
+## Workflow & Contributions
 
+- Branching: feature/<short-description>, fix/<short-description>
+- PRs: Open PRs against main (or the repository's default branch). Include a description, testing notes, and screenshots if applicable.
+- Code review: Request at least one reviewer. Address review comments and squash/fix commits as appropriate.
 cd frontend
 npm install
 npm run dev # This will launch the Vite dev server
-```
-
-
