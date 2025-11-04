@@ -334,19 +334,6 @@ The project is configured for deployment on **Netlify**:
 - Pushes to the `main` branch trigger automatic deployments
 - Live site: [www.tessera-studios.com](https://www.tessera-studios.com)
 
-### Docker Support
-
-A `dockerfile` is included for containerized deployments:
-
-```bash
-# Build Docker image
-docker build -t tessera-web-frontend .
-
-# Run container
-docker run -p 80:80 tessera-web-frontend
-```
-
----
 
 ## 📚 Additional Resources
 
@@ -396,4 +383,4 @@ For questions or issues related to the frontend:
 
 **Built with ❤️ by Tessera Studios**
 
-*Crafting software solutions, one piece at a time.*
+*Building your vision, one piece at a time.*
