@@ -38,7 +38,7 @@ Follow these steps to set up the project locally.
 
 You will need the following software installed on your machine:
 * [Node.js](https://nodejs.org/en/) (LTS recommended)
-* [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+* [npm](https://www.npmjs.com/) or [bun](https://bun.com/)
 
 ### Installation
 
@@ -53,8 +53,8 @@ You will need the following software installed on your machine:
     # Using npm
     npm install
 
-    # OR Using Yarn
-    yarn install
+    # OR Using bun
+    bun install
     ```
 
 3.  **Start the development server:**
@@ -62,8 +62,8 @@ You will need the following software installed on your machine:
     # Using npm
     npm start
 
-    # OR Using Yarn
-    yarn start
+    # OR Using bun
+    bun start
     ```
     The website will typically be available at `http://localhost:5173`.
 
@@ -78,8 +78,9 @@ To create an optimized, static build of the application:
 # Using npm
 npm run build
 
-# OR Using Yarn
-yarn build
+# OR Using bun
+bun run build
+
 The production-ready files will be generated in the dist/ directory.
 ```
 
