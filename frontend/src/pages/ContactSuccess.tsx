@@ -29,7 +29,7 @@ function ContactSuccess() {
                     <p className="mb-6 max-w-xl px-10 md:px-0">We received your message and will respond to you shortly. Please keep an eye on your inbox.</p>
 
                     <div className="flex gap-4">
-                        <Link to="/contact" id="return-home-btn">Return Home</Link>
+                        <Link to="/" id="return-home-btn">Return Home</Link>
                     </div>
                 </div>
             </div>
