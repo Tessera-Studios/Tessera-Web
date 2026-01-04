@@ -31,7 +31,7 @@ function Contact() {
                         name="contact"
                         className="flex flex-col justify-start items-start gap-5 w-full"
                         method="post"
-                        action="/contact-success"
+                        action="/pages/contact-success"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                     >
