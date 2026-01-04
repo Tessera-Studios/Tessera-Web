@@ -7,6 +7,20 @@ function Contact() {
     useEffect(() => {
         document.title = 'Tessera Studios | Contact';
     }, []);
+
+    const submitHandler = (e) => {
+      e.preventDefault();
+      const myForm = document.getElementById("contact-form-form");
+      const formData = new FormData(myForm);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => navigate("/contact-success"))
+        .catch((error) => alert(error));
+    };
+
     return (
         <>
             <div id="contact-landing" className="relative min-h-[100vh] p-8 py-30 md:py-40 flex flex-col justify-center items-center text-center">
@@ -28,12 +42,14 @@ function Contact() {
                         }} />
                     <h1 className="text-2xl md:text-4xl font-semibold mb-8 text-center">Let's Get in Touch</h1>
                     <form
+                        id="contact-form-form"
                         name="contact"
                         className="flex flex-col justify-start items-start gap-5 w-full"
                         method="post"
-                        action="/contact-success"
+                        {/*  action="/pages/contact-success" */}
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
+                        onSubmit={submitHandler}
                     >
                         <input type="hidden" name="form-name" value="contact" />
                         <p className="hidden">
