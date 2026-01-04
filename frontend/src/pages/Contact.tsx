@@ -1,24 +1,32 @@
 import "./Contact.css";
 import Silk from "../components/Silk";
 import emblem from "../assets/tessera-emblem-light-purple-transparent.png";
-import { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
     useEffect(() => {
         document.title = 'Tessera Studios | Contact';
     }, []);
 
-    const submitHandler = (e) => {
-      e.preventDefault();
-      const myForm = document.getElementById("contact-form-form");
-      const formData = new FormData(myForm);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => navigate("/contact-success"))
-        .catch((error) => alert(error));
+    const navigate = useNavigate();
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = formRef.current;
+
+        if (!form) return;
+
+        const formData = new FormData(form);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        })
+            .then(() => navigate("/contact-success"))
+            .catch((error) => alert(error));
     };
 
     return (
@@ -49,6 +57,7 @@ function Contact() {
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                         onSubmit={submitHandler}
+                        ref={formRef}
                     >
                         <input type="hidden" name="form-name" value="contact" />
                         <p className="hidden">
