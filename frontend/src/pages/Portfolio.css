@@ -1,0 +1,11 @@
+#portfolio {
+    background: linear-gradient(to top, var(--deep-purple), var(--background));
+}
+
+#marketing {
+    background: linear-gradient(to bottom, var(--deep-purple), var(--background));
+}
+
+#software-development {
+    background: linear-gradient(to top, var(--deep-purple), var(--background));
+}
