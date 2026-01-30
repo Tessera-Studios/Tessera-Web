@@ -1,11 +1,22 @@
 #portfolio {
-    background: linear-gradient(to top, var(--deep-purple), var(--background));
+  background-image: url("../assets/portfolio-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #marketing {
-    background: linear-gradient(to bottom, var(--deep-purple), var(--background));
+  background: linear-gradient(to bottom, var(--deep-purple), var(--background));
 }
 
 #software-development {
-    background: linear-gradient(to top, var(--deep-purple), var(--background));
+  background: linear-gradient(to top, var(--deep-purple), var(--background));
+}
+
+@media (max-width: 768px) {
+  #portfolio {
+    background-image: url("../assets/portfolio-bg-mobile.png");
+    background-attachment: scroll;
+  }
 }

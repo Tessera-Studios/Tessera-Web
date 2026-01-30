@@ -44,6 +44,14 @@ function Navbar() {
                         About
                     </NavLink>
                     <NavLink
+                        to="/portfolio"
+                        className={({ isActive }) =>
+                            `${isActive ? "active " : ""}nav-link`
+                        }
+                    >
+                        Portfolio
+                    </NavLink>
+                    <NavLink
                         to="/services"
                         className={({ isActive }) =>
                             `${isActive ? "active " : ""}nav-link`
@@ -104,6 +112,15 @@ function Navbar() {
                     }
                 >
                     About
+                </NavLink>
+                <NavLink
+                    to="/portfolio"
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) =>
+                        `${isActive ? "active " : ""}nav-link`
+                    }
+                >
+                    Portfolio
                 </NavLink>
                 <NavLink
                     to="/services"
