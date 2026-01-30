@@ -2,8 +2,13 @@ import ContactCTA from "../components/ContactCTA";
 import "./Portfolio.css";
 import Project from "../components/Project";
 import { projects } from "../data/projects";
+import { useEffect } from "react";
 
 function Portfolio() {
+    useEffect(() => {
+        document.title = 'Tessera Studios | Portfolio';
+    }, []);
+
     return <>
         <div id="portfolio" className="w-full min-h-[100vh] p-30 flex flex-col items-center text-white">
         </div>
