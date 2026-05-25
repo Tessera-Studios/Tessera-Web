@@ -68,7 +68,6 @@ function Portfolio() {
 
                     <div className="relative flex-shrink-0" ref={filtersRef}>
                         <button
-                            aria-haspopup="true"
                             aria-expanded={showFilters}
                             onClick={() => setShowFilters(s => !s)}
                             className="flex h-[3.25rem] items-center gap-2 px-4 rounded-xl bg-[var(--surface)] text-white/90 hover:opacity-95">
@@ -87,7 +86,6 @@ function Portfolio() {
                                     {filterCategories.map(cat => (
                                         <button
                                             key={cat}
-                                            role="menuitem"
                                             onClick={() => { setSelectedCategory(cat); setShowFilters(false); }}
                                             className={`filter-option text-left px-3 py-2 rounded-md text-sm ${selectedCategory === cat ? 'bg-[var(--accent)] text-white' : 'hover:bg-[var(--surface)] text-white/90'}`}>
                                             {cat}
