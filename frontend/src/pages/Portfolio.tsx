@@ -19,7 +19,8 @@ function Portfolio() {
     useEffect(() => {
         function handleDocClick(e: MouseEvent) {
             if (!filtersRef.current) return;
-            if (!filtersRef.current.contains(e.target as Node)) setShowFilters(false);
+            if (!(e.target instanceof Node)) return;
+            if (!filtersRef.current.contains(e.target)) setShowFilters(false);
         }
         function handleKey(e: KeyboardEvent) {
             if (e.key === 'Escape') setShowFilters(false);
