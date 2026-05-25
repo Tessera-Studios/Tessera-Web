@@ -17,24 +17,28 @@ function Home() {
         <>
             <div className="overflow-x-hidden">
                 <div id="home-landing" className="flex flex-col justify-center items-center md:min-h-[100vh] p-5 md:p-10">
-                        <img src={emblem} alt="Tessera Studios Emblem" className="block lg:hidden" width={150} height={150} />
-                        <h1 className="text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, <br className="block md:hidden"></br> One Piece at a Time</h1>
-                        <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)] mb-2 md:mb-0">Software Design & Development Services</p>
-                        <button id="build-button" className="mt-6"><Link to="/contact">Let's Build!</Link></button>
+                    <img src={emblem} alt="Tessera Studios Emblem" className="block lg:hidden" width={150} height={150} />
+                    <h1 className="text-3xl xl:text-4xl p-4 font-semibold leading-10">Building Your Vision, <br className="block md:hidden"></br> One Piece at a Time</h1>
+                    <p className="text-md lg:text-lg xl:text-xl text-[var(--light-grey)] mb-2 md:mb-0">Software Design & Development Services</p>
+                    <button id="build-button" className="mt-6"><Link to="/contact">Let's Build!</Link></button>
                 </div>
 
                 <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[35vh] bg-white text-black p-8 md:p-15">
                     <h2 className="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-2">What We Do</h2>
-                    <p className="text-center md:max-w-[75vw] lg:max-w-[35vw] py-2 leading-7">At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.</p>
+                    <div className="text-center md:max-w-[75vw] lg:max-w-[35vw] py-2 leading-7 text-lg">
+                        <p>At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.
+                        </p>
+                        <p className="mt-6">From bespoke websites to digital marketing solutions, we’ve partnered with clients across the UK and Barbados to deliver meaningful digital experiences that drive tangible results.</p>
+                    </div>
                     <button id="learn-more-button" className="mt-4 md:mt-6"><Link to="/services">Learn More</Link></button>
                 </div>
 
                 <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-8 py-20 md:p-20">
                     <div className="px-20 md:p-0">
                         <div className="image-container md:mr-5 mb-5 lg:mb-0">
-                        <img className="our-approach-image" alt="Our Approach" src={ourApproachImage} width={300} height={300} />
-                        <div className="inner-shadow"></div>
-                    </div>
+                            <img className="our-approach-image" alt="Our Approach" src={ourApproachImage} width={300} height={300} />
+                            <div className="inner-shadow"></div>
+                        </div>
                     </div>
                     <div className="text-container p-5 md:p-10 lg:max-w-[45vw]">
                         <h2 className="text-3xl md:text-5xl mb-3 md:mb-5 font-semibold text-center lg:text-start">Our Approach</h2>
@@ -90,7 +94,7 @@ function Home() {
                         </div>
 
                     </div>
-                    <p className="text-center p-5 lg:max-w-[40vw]">We don’t do one-size-fits-all. Every project is a custom composition, carefully built to align with your unique vision.</p>
+                    <p className="text-center p-5 lg:max-w-[40vw] text-lg">We don’t do one-size-fits-all. Every project is a custom composition, carefully built to align with your unique vision.</p>
                 </div>
 
                 <div id="home-vision" className="flex justify-center items-center min-h-[30vh] bg-[var(--deep-purple)] border-t-3 border-b-3 border-[var(--accent)] p-10">

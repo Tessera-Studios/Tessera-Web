@@ -19,6 +19,50 @@
   background-position: 0 0;
 }
 
+.booking-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--accent), var(--accent))
+      padding-box,
+    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
+  border: 2px solid transparent;
+  border-radius: 0.35rem;
+  padding: 5px 25px;
+  font-weight: 500;
+  color: white;
+  box-shadow: inset 0px 2px 8px rgba(150, 139, 232, 0.756);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.booking-cta:hover {
+  transform: scale(1.04);
+  box-shadow: inset 1px -2px 8px rgba(150, 139, 232, 0.35);
+}
+
+.booking-cta:focus-visible {
+  outline: 3px solid rgba(147,62,255,0.16);
+  outline-offset: 3px;
+}
+
+.booking-cta.active {
+  background: linear-gradient(to right, var(--primary), var(--accent)) padding-box,
+    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
+  border-color: rgba(255,255,255,0.06);
+  box-shadow: 0 12px 30px rgba(123,70,255,0.20), inset 1px -6px 16px rgba(150,139,232,0.35);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Ensure booking CTA text remains white even though .nav-link/.active use background-clip text */
+.booking-cta.active,
+.booking-cta.active:hover,
+.booking-cta:focus-visible {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
 .active {
   background: var(--secondary);
   background-clip: text;
