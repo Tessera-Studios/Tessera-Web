@@ -36,12 +36,12 @@ function Portfolio() {
 
     const filtered = useMemo(() => {
         return projects.filter(p => {
-            const projectCategories = p.categories ?? [p.category];
+            const projectCategories = p.categories || [];
             const matchesCategory = selectedCategory === 'All'
                 ? true
                 : projectCategories.includes(selectedCategory) || (p.tags && p.tags.includes(selectedCategory));
             const q = query.trim().toLowerCase();
-            const matchesQuery = q === '' || [p.title, p.description, p.category, ...projectCategories, ...(p.tags || [])].join(' ').toLowerCase().includes(q);
+            const matchesQuery = q === '' || [p.title, p.description, ...projectCategories, ...(p.tags || [])].join(' ').toLowerCase().includes(q);
             return matchesCategory && matchesQuery;
         });
     }, [query, selectedCategory]);
