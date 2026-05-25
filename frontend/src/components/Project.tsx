@@ -1,25 +1,8 @@
 function Project({ title, image, description, tags, onTagClick, link }: { title?: string; image?: string; description?: string; tags?: string[]; onTagClick?: (tag: string) => void; link?: string | null }) {
     const isClickable = Boolean(link);
-
-    function openProjectLink() {
-        if (!link) return;
-        window.open(link, '_blank', 'noopener,noreferrer');
-    }
-
-    return (
-        <div
-            className={`project group flex flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-[var(--deep-purple)] p-5 shadow-[0_16px_50px_rgba(0,0,0,0.22)] backdrop-blur-xl md:p-6 ${isClickable ? 'hover:cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70' : ''}`}
-            onClick={isClickable ? openProjectLink : undefined}
-            onKeyDown={isClickable ? (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    openProjectLink();
-                }
-            } : undefined}
-            role={isClickable ? 'link' : undefined}
-            tabIndex={isClickable ? 0 : undefined}
-            aria-label={isClickable ? `Open ${title || 'project'}` : undefined}
-        >
+    const cardClasses = `project group flex flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-[var(--deep-purple)] p-5 shadow-[0_16px_50px_rgba(0,0,0,0.22)] backdrop-blur-xl md:p-6 ${isClickable ? 'hover:cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70' : ''}`;
+    const cardContent = (
+        <>
             <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/10">
                 <img
                     src={image}
@@ -41,8 +24,11 @@ function Project({ title, image, description, tags, onTagClick, link }: { title?
                         <button
                             key={tag}
                             onClick={(e) => {
+                                if (isClickable) {
+                                    e.preventDefault();
+                                }
                                 e.stopPropagation();
-                                onTagClick && onTagClick(tag);
+                                onTagClick?.(tag);
                             }}
                             className="project-tag rounded-full px-3 py-1 text-sm text-white/90"
                         >
@@ -52,7 +38,19 @@ function Project({ title, image, description, tags, onTagClick, link }: { title?
                 </div>
             )}
             </div>
-        </div>
+        </>
+    );
+
+    return (
+        isClickable && link ? (
+            <a className={cardClasses} href={link} target="_blank" rel="noopener noreferrer" aria-label={`Open ${title || 'project'}`}>
+                {cardContent}
+            </a>
+        ) : (
+            <div className={cardClasses}>
+                {cardContent}
+            </div>
+        )
     );
 }
 
