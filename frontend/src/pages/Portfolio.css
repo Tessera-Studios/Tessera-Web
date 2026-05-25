@@ -1,6 +1,6 @@
 
 .portfolio-page {
-  background: linear-gradient(to bottom, var(--background));
+  background: linear-gradient(to bottom, #100623, var(--background));
   -webkit-font-smoothing: antialiased;
 }
 
