@@ -47,17 +47,6 @@
   outline-offset: 3px;
 }
 
-.booking-cta.active {
-  background: linear-gradient(to right, var(--primary), var(--accent)) padding-box,
-    linear-gradient(to right, var(--secondary), var(--primary)) border-box;
-  border-color: rgba(255,255,255,0.06);
-  box-shadow: 0 12px 30px rgba(123,70,255,0.20), inset 1px -6px 16px rgba(150,139,232,0.35);
-  transform: translateY(-2px) scale(1.03);
-}
-
-/* Ensure booking CTA text remains white even though .nav-link/.active use background-clip text */
-.booking-cta.active,
-.booking-cta.active:hover,
 .booking-cta:focus-visible {
   color: #ffffff;
   -webkit-text-fill-color: #ffffff !important;
