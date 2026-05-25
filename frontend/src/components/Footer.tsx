@@ -16,23 +16,30 @@ function Footer() {
                 <p className="text-3xl block md:hidden mb-2">Quick Links</p>
                 <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
                 <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
+                <NavLink to="/portfolio" className={({ isActive }) => isActive ? "active" : ""}>Portfolio</NavLink>
                 <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>Services</NavLink>
                 <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Contact</NavLink>
             </div>
 
             <div id="section-3" className="flex flex-col gap-2 mb-10 md:mb-0 text-center md:text-start">
-                <p className="text-3xl">Connect With Us</p>
+                <p className="text-3xl md:text-2xl">Connect With Us</p>
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fa-solid fa-envelope text-[var(--secondary)]"></i>
                     <a href="mailto:info@tessera-studios.com">info@tessera-studios.com</a>
                 </div>
+
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
                     <i className="fab fa-linkedin text-[var(--secondary)]"></i>
                     <a href="https://www.linkedin.com/company/tesserastudios" target="_blank" rel="noopener noreferrer">Tessera Studios</a>
                 </div>
 
                 <div className="flex items-center gap-2 ml-8 md:ml-0">
-                     <i className="fa fa-map-marker-alt text-[var(--secondary)]"></i>
+                    <i className="fa fa-phone text-[var(--secondary)]"></i>
+                    <a href="tel:+12468343880">+1 (246) 834-3880</a>
+                </div>
+
+                <div className="flex items-center gap-2 ml-8 md:ml-0">
+                    <i className="fa fa-map-marker-alt text-[var(--secondary)]"></i>
                     <p>St. James, Barbados</p>
                 </div>
             </div>

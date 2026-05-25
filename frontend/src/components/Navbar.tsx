@@ -2,6 +2,7 @@ import "./Navbar.css";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { CALENDLY_URL } from "../lib/utils";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ function Navbar() {
         <>
             <div
                 id="nav-bar"
-                className="flex justify-between p-5 px-8 absolute w-full left-0 z-50"
+                className="flex justify-between items-center p-5 pl-8 absolute w-full left-0 z-50"
             >
                 <div id="branding">
                     <NavLink
@@ -25,7 +26,7 @@ function Navbar() {
 
                 <div
                     id="links"
-                    className="md:gap-12 md:px-5 mr-2 hidden lg:flex"
+                    className="md:gap-8 md:px-5 mr-2 hidden lg:flex items-center"
                 >
                     <NavLink
                         to="/"
@@ -44,6 +45,14 @@ function Navbar() {
                         About
                     </NavLink>
                     <NavLink
+                        to="/portfolio"
+                        className={({ isActive }) =>
+                            `${isActive ? "active " : ""}nav-link`
+                        }
+                    >
+                        Portfolio
+                    </NavLink>
+                    <NavLink
                         to="/services"
                         className={({ isActive }) =>
                             `${isActive ? "active " : ""}nav-link`
@@ -59,6 +68,7 @@ function Navbar() {
                     >
                         Contact
                     </NavLink>
+                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className={`booking-cta nav-link`}>Book Consultation</a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -106,6 +116,15 @@ function Navbar() {
                     About
                 </NavLink>
                 <NavLink
+                    to="/portfolio"
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) =>
+                        `${isActive ? "active " : ""}nav-link`
+                    }
+                >
+                    Portfolio
+                </NavLink>
+                <NavLink
                     to="/services"
                     onClick={() => setIsOpen(false)}
                     className={({ isActive }) =>
@@ -123,6 +142,7 @@ function Navbar() {
                 >
                     Contact
                 </NavLink>
+                <a href={CALENDLY_URL} onClick={() => setIsOpen(false)} target="_blank" rel="noopener noreferrer" className={`booking-cta nav-link`}>Book Consultation</a>
             </div>
         </>
     );
