@@ -117,6 +117,7 @@ function Portfolio() {
                                 image={project.image}
                                 description={project.description}
                                 tags={project.tags}
+                                link={project.link}
                                 onTagClick={(tag) => { setSelectedCategory(tag); setQuery(''); }}
                             />
                         ))}
