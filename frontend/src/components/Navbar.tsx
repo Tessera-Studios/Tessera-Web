@@ -2,7 +2,7 @@ import "./Navbar.css";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-const CALENDLY_URL = 'https://calendly.com/tessera-studios-info/consultation?&hide_gdpr_banner=1&primary_color=933eff';
+import { CALENDLY_URL } from "../lib/utils";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

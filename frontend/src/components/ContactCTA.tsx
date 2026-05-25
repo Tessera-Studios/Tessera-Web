@@ -1,6 +1,5 @@
 import "./ContactCTA.css"
-
-const CALENDLY_URL = "https://calendly.com/tessera-studios-info/consultation?&hide_gdpr_banner=1&primary_color=933eff";
+import { CALENDLY_URL } from "../lib/utils";
 
 function ContactCTA() {
     return (
