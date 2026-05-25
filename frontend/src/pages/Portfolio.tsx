@@ -47,9 +47,9 @@ function Portfolio() {
     }, [query, selectedCategory]);
 
     return (<>
-        <div className="portfolio-page w-full min-h-[100vh] pt-20 md:pt-28 pb-8 md:pb-20 px-0 md:px-8 text-white flex flex-col items-stretch gap-8">
-            <header className="w-full px-6 md:px-16">
-                <h1 className="m-5 mb-8 text-center text-5xl md:text-6xl font-bold">Our Portfolio</h1>
+        <div className="portfolio-page w-full min-h-[100vh] pt-25 md:pt-28 pb-8 md:pb-20 px-0 md:px-8 text-white flex flex-col items-stretch gap-8">
+                <header className="w-full px-6 md:px-16">
+                <h1 className="m-0 mb-6 text-center text-4xl md:text-5xl font-bold">Our Portfolio</h1>
 
                 <div className="flex flex-row items-center gap-3 md:gap-4">
                     <div className="search-shell flex-1 min-w-0 relative">

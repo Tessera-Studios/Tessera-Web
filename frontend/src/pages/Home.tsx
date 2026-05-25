@@ -4,6 +4,8 @@ import ourApproachImage from "../assets/our-approach.png"
 import tesseraTileImage from "../assets/tessera-emblem-light-purple-transparent.png"
 import tesseraWhiteTileImage from "../assets/tessera-emblem-white-transparent.png"
 import emblem from '/tessera-emblem.png';
+import ukImg from "../assets/countries/uk.png";
+import barbadosImg from "../assets/countries/barbados.png";
 import Silk from "../components/Silk.tsx";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
@@ -23,14 +25,31 @@ function Home() {
                     <button id="build-button" className="mt-6"><Link to="/contact">Let's Build!</Link></button>
                 </div>
 
-                <div id="home-what-we-do" className="flex flex-col justify-center items-center min-h-[35vh] bg-white text-black p-8 md:p-15">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-2">What We Do</h2>
-                    <div className="text-center md:max-w-[75vw] lg:max-w-[35vw] py-2 leading-7 text-lg">
-                        <p>At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.
-                        </p>
-                        <p className="mt-6">From bespoke websites to digital marketing solutions, we’ve partnered with clients across the UK and Barbados to deliver meaningful digital experiences that drive tangible results.</p>
+                <div id="home-what-we-do" className="flex flex-col justify-center items-center bg-white text-black py-20 px-6 md:py-20 md:px-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-3">What We Do</h2>
+                    <div className="text-center md:max-w-[75vw] lg:max-w-[40vw] py-2 leading-8 text-base md:text-lg">
+                        <p className="mb-3">At Tessera Studios, we design and develop software solutions that are custom, flexible, and built for real impact.</p>
+                        <p className="mt-4 md:mt-6">We’ve partnered with clients across the UK and Barbados to deliver quality digital experiences that drive tangible results.</p>
+                     <div className="mt-8 md:mt-4 flex justify-center gap-6">
+                            <div className="flex flex-col items-center gap-2">
+                                <img
+                                    src={ukImg}
+                                    alt="United Kingdom flag"
+                                    className="w-16 h-10 md:w-20 md:h-14 object-cover rounded-md shadow-[0_6px_18px_rgba(18,18,18,0.12)] border border-[rgba(0,0,0,0.06)]"
+                                />
+                                <span className="text-sm text-[var(--dark-text)]">United Kingdom</span>
+                            </div>
+                            <div className="flex flex-col items-center gap-2">
+                                <img
+                                    src={barbadosImg}
+                                    alt="Barbados flag"
+                                    className="w-16 h-10 md:w-20 md:h-14 object-cover rounded-md shadow-[0_6px_18px_rgba(18,18,18,0.12)] border border-[rgba(0,0,0,0.06)]"
+                                />
+                                <span className="text-sm text-[var(--dark-text)]">Barbados</span>
+                            </div>
+                        </div>
                     </div>
-                    <button id="learn-more-button" className="mt-4 md:mt-6"><Link to="/services">Learn More</Link></button>
+                    <button id="learn-more-button" className="mt-8 md:mt-6 w-full md:w-auto max-w-[260px]"><Link to="/services">Learn More</Link></button>
                 </div>
 
                 <div id="home-our-approach" className="flex flex-col lg:flex-row justify-center items-center min-h-[75vh] p-8 py-20 md:p-20">

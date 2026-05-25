@@ -53,6 +53,6 @@ export const projects = [
         categories: ['Software Development'],
         tags: ['mobile', 'community', 'transport', 'reporting'],
         image: potholePatrolImg,
-        link: null
+        link: 'https://www.figma.com/proto/ox4Z9jnhjMqtF516Ho78yO/Pothole-Patrol?node-id=183-445&starting-point-node-id=183%3A445'
     }
 ];
