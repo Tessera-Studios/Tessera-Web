@@ -3,6 +3,7 @@ import carisurgImg from '../assets/projects/carisurg.png';
 import resonationLifestyleImg from '../assets/projects/resonation-lifestyle.png';
 import pocketCareImg from '../assets/projects/pocket-care.png';
 import potholePatrolImg from '../assets/projects/pothole-patrol.png';
+import symplyImg from '../assets/projects/symply.png';
 
 export const projects = [
     {
@@ -21,7 +22,7 @@ export const projects = [
         categories: ['Software Development', 'Marketing'],
         tags: ['marketing', 'branding', 'content creation', 'strategy'],
         image: carisurgImg,
-        link: null 
+        link: null
     },
     {
         id: 'pocket-care',
@@ -39,6 +40,15 @@ export const projects = [
         categories: ['Software Development', 'Health Tech'],
         tags: ['mobile', 'desktop', 'wellness', 'flutter', 'electron'],
         image: flexaImg,
+        link: null
+    },
+    {
+        id: 'symply',
+        title: 'Symply',
+        description: 'A symptom tracking app designed to help users with chronic illnesses monitor their health, identify patterns, and share insights with healthcare providers for better management.',
+        categories: ['Health Tech', 'Software Development'],
+        tags: ['mobile', 'health', 'wellness', 'ui/ux', 'flutter'],
+        image: symplyImg,
         link: null
     },
     {
