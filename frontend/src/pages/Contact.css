@@ -27,6 +27,23 @@
   border: 1px solid var(--secondary);
 }
 
+#contact-form input[aria-invalid="true"],
+#contact-form textarea[aria-invalid="true"] {
+  border-color: #ff6b6b;
+}
+
+.contact-error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
+}
+
+#contact-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
 #contact-submit-button {
   background: linear-gradient(to right, var(--accent), var(--primary))
       padding-box,
