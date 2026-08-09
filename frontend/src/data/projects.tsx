@@ -13,7 +13,7 @@ export const projects = [
         categories: ['Software Development', 'Health Tech'],
         tags: ['web', 'health', 'wellness', 'ui/ux', 'software development'],
         image: resonationLifestyleImg,
-        link: 'https://resonationlifestyle.com/'
+        // link: 'https://resonationlifestyle.com/'
     },
     {
         id: 'carisurg-marketing',
